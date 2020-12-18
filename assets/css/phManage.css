@@ -1,0 +1,84 @@
+.healthPersonManage .personHealthItem{
+    width:364px;
+    height: 400px;
+}
+.healthPersonManage .personHethBg2{
+    background-image: url("../imgs/phmanage/bg2.png");
+}
+.healthPersonManage .personHethBg3{
+    background-image: url("../imgs/phmanage/bg3.png");
+}
+.nav-item-title{
+    width: 850px;
+    height: 56px;
+    font-size: 60px;
+    font-family: FZLanTingHei-B-GBK;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 36px;
+    
+}
+.nav-bgImg1{
+background: url("../imgs/ehmanage/bg6.png");
+background-repeat:no-repeat;    
+background-size:cover;
+}
+.nav-item-box{
+width: 870px;
+}
+.nav-icon-img{
+    margin:0 auto;
+    display: block;
+}
+.icon-img-title{
+    font-size: 22px;
+    font-family: FZLanTingHeiS-R-GB;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 36px;
+}
+.nav-item-bottom{
+ width:120%;
+ position: relative;
+ left:-10%;
+
+}
+.healthPersonManage .personHethBg4{
+    background-image: url("../imgs/phmanage/bg4.png");
+}
+.healthPersonManage .personHethBg5{
+    background-image: url("../imgs/phmanage/bg5.png");
+}
+.healthPersonManage .personHethBg6{
+    background-image: url("../imgs/phmanage/bg6.png");
+}
+.peronHethTitle{
+    
+font-size: 24px;
+font-family: Source Han Sans CN;
+font-weight: 500;
+color: #333333;
+line-height: 36px;
+margin-bottom: 10px;
+}
+.phText{
+    width: 196px;
+    margin:0 auto;
+}
+.ph-btn-more{
+    
+font-size: 20px;
+font-family: Source Han Sans CN;
+font-weight: 500;
+color: #57BD46;
+line-height: 20px;
+padding:19px;
+border:1px solid #57BD46;
+display: inline-block;
+border-radius: 50px;
+margin-left: 50%;
+height: 57px;
+margin-top: 20px;
+margin-bottom: 50px;
+transform: translate(-50%,0);
+}

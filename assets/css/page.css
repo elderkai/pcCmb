@@ -1,0 +1,233 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.body{
+    min-width:98vw;
+    min-height: 100vh;
+    background: #FAFAFA;
+}
+.banner{
+    width:100%;
+    height:34px;
+    background: #fff;
+}
+.banner-img{
+    width: 19px;
+    height: 15px;
+    position: relative;
+    top: 0px;
+    margin:0 10px;
+}
+.banner-body{
+    display: flex;
+    justify-content: space-between;
+    margin:auto;
+    width:1200px;
+    height:100%;
+    min-width: 600px;
+}
+.banner-left{
+
+}
+.banner-btn{
+    display: inline-block;
+    height: 100%;
+    font-size: 12px;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #666666;
+    line-height: 41px;
+}
+.company-icon{
+    width:100%;
+    height:98px;
+    background: #fff;
+   
+}
+.icon-box{
+    width: 1200px;
+    padding-top: 24px;
+    margin-left: 50%;
+    transform: translate(-50%,0);
+}
+.nav-box{
+width: 100%;
+background: #45B233;
+
+}
+.companyIcon2{
+    margin-left: 12px;
+}
+.showMoreIcon{
+    top:0;
+}
+body .layui-nav{
+    background-color: #45B233;
+    width: 1200px;
+}
+.layui-nav .layui-nav-item a{
+    padding:0 50px;
+}
+.layui-nav .layui-this:after {display: none;}
+.layui-nav .layui-this a
+{
+    color:#45B233;
+}
+.layui-nav .layui-this{
+    background:#FAFAFA;
+    color:#45B233;
+}
+.layui-nav-bar{
+    display: none;
+}
+.layui-nav .layui-nav-item{
+    line-height: 40px;
+}
+.nav-item-bottom{
+    margin-top:62px;
+    display: flex;
+    justify-content: space-between;
+}
+.aboutUs{
+    min-width: 1200px;
+    width: 100%;
+    height: 595px;
+    background: url("../imgs/bg1.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:100% 100%;
+    position: relative;
+    padding: 85px 0;
+}
+.aboutUsBody{
+    width:1200px;
+    margin-left: 50%;
+    transform: translate(-50%,0);
+    display: flex;
+    justify-content: space-between;
+}
+.aboutUs .leftBox {
+    width: 420px;
+    margin-right:42px;
+}
+.aboutUs .leftBox .left-title{
+    font-size: 36px;
+    font-family: Source Han Sans CN;
+    font-weight: bold;
+    color: #FFFFFF;
+    line-height: 41px;
+}
+
+.aboutUs .leftBox .left-text{
+    margin-top:36px;
+    width: 420px;
+    height: 111px;
+    font-size: 14px;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #E6FFF0;
+    line-height: 24px;
+    
+}
+.aboutUs .leftBox .left-slogan{
+    height: 29px;
+    font-size: 30px;
+    margin-top:68px;
+    font-family: Source Han Sans CN;
+    font-weight: 500;
+    color: #E6FFF0;
+    line-height: 41px;
+
+}
+.aboutUs .rightBox {
+    width:696px;
+    height:420px;
+    background: #fff;
+    border-radius: 20px;
+    padding:30px 39px;
+}
+.aboutUs .rightBox .right-header{
+    display: flex;
+    justify-content: space-between;
+    border-bottom:2px dashed #999;
+    padding-bottom:12px;
+    margin-bottom: 28px;
+}
+.aboutUs .rightBox .right-header .left{
+    width: 72px;
+    height: 18px;
+    font-size: 18px;
+    font-family: Source Han Sans CN;
+    font-weight: bold;
+    color: #333333;
+    line-height: 20px;
+    
+    
+}
+.aboutUs .rightBox .right-header .btn-more{
+    color: #999;
+}
+.aboutUs .rightBox .newsItem{
+    display: flex;
+    margin-bottom:22px;
+}
+.aboutUs .rightBox .newsItem .newItem-left{
+    margin-right: 34px;
+}
+.aboutUs .rightBox .newsItem .newItem-right .title{
+    height: 15px;
+    font-size: 14px;
+    font-family: Source Han Sans CN;
+    font-weight: bold;
+    color: #333333;
+    line-height: 18px;
+    
+}
+.aboutUs .rightBox .newsItem .newItem-right .news-item-text{
+    margin-top:15PX;
+    width: 426px;
+    height: 53px;
+    font-size: 12px;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #777777;
+    line-height: 20px;
+    
+}
+.home-bottom{
+    height: 150px;
+    width: 100%;
+    background: #fff;
+    box-sizing: border-box;
+    padding-top: 20px;
+    
+}
+.home-bottom .bottomCent{
+    margin-top:42px;
+    box-sizing: border-box;
+    height: 98px;
+    width:1200px;
+    text-align: center;
+    margin:42px auto 0;
+}
+.home-bottom .bottomCent .Copyright{
+    margin-top:22px;
+    margin-bottom: 10px;
+}
+.home-bottom .bottomCent .record{
+
+}
+.layui-nav .layui-nav-item{
+ 
+}
+.layui-nav .layui-nav-item a{
+text-align: center;
+}
+body .layui-nav{
+    margin-left:50%;
+transform: translate(-50%,0);
+display: flex;
+justify-content: space-around;
+}

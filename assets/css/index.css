@@ -1,0 +1,353 @@
+.nav-bgImg1{
+    background-image:url("../imgs/carousel2Big.png");
+    background-repeat:no-repeat;    
+    background-size:cover;
+    background-position: 0 -238px;
+}
+
+.layui-carousel-ind ul :hover{
+
+    background: none!important;
+}
+.layui-carousel-ind ul{
+    background: none;
+}
+.layui-carousel-ind ul .layui-this{
+    background-color: #45B233;
+}
+.layui-carousel-ind li{
+    background-color: #A7A9AC;
+    width: 30px;
+    height: 10px;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+.nav-bgImg2{
+    background-image:url("../imgs/carousel3Big.png");
+    background-repeat:no-repeat;    
+    background-size:cover;
+    /* background-position: 0 -238px; */
+}
+.nav-bgImg3{
+    background-image:url("../imgs/carousel1Big.png");
+    background-repeat:no-repeat;    
+    background-size:cover;
+    /* background-position: 0 -238px; */
+}
+.nav-item-title{
+    width: 474px;
+height: 55px;
+font-size: 57px;
+font-family: FZLanTingHeiS-B-GB;
+font-weight: 400;
+color: #20880E;
+line-height: 64px;
+
+}
+.nav-item-box{
+    width: 474px;
+    margin-left: 24.5%;
+    margin-top:112px;
+}
+.icon-img-title{
+    width:100%;
+    text-align: center;
+    margin-top:25px;
+}
+.service-num{
+    width: 120px;
+    height: 36px;
+    font-size: 36px;
+    font-family: Source Han Sans CN;
+    font-weight: 500;
+    color: #555555;
+    line-height: 41px;
+    margin-top:20px;
+    
+}
+.service-num .icon-add{
+    font-size: 18px;
+    color:#999;
+    left:10px;
+    position: relative;
+    top: -23px;
+    font-weight: 400;
+}
+.content-Box{
+    width: 120px;
+    text-align: center;
+    margin:0 4%;
+}
+.serviceContent{
+    display: flex;
+    justify-content:center;
+    box-sizing: border-box;
+    padding:56px;
+}
+.serviceContent .content-Box .title{
+    display: inline-block;
+    height: 18px;
+    font-size: 18px;
+    font-family: Source Han Sans CN;
+    font-weight: 400;
+    color: #999999;
+    line-height: 17px;
+    margin-top:20px;
+}
+.service-icon-img{
+    display: inline-block;
+    margin:0 auto;
+}
+.content{
+    background: #f4f4f4;
+    padding-bottom: 30px;
+}
+.content .titleBox .title-hr{
+display: inline-block;
+width:149px;
+background: #ccc;
+color:#ccc;
+}
+.content  .titleIntroduce{
+    text-align: center;
+    font-size: 18px;
+    font-family: PingFangSC;
+    font-weight: 500;
+    color: #999999;
+    line-height: 21px;
+    margin-top:20px;
+
+}
+.content .titleBox{
+    text-align: center;
+}
+.content .titleBox .title{
+    width: 211px;
+    margin:0 69px;
+    height: 33px;
+    font-size: 34px;
+    font-family: PingFangSC;
+    display: inline-block;
+    font-weight: bold;
+    color: #333333;
+    line-height: 40px;
+    
+}
+.healthCases{
+    width: 1200px;
+    display: flex;
+    margin:0 auto;
+    justify-content: space-between;
+}
+.content-header{
+    padding-top:69px;
+    padding-bottom: 66px;
+}
+.healthCaseItem{
+    position: relative;
+    width: 380px;
+    padding:37.5px 36px;
+    height: 320px;
+    border-radius: 5px;
+    background: #fff;
+    background-image: url("../imgs/doctor2.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:100% 100%;
+    position: relative;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+.btn-goDetail{
+    margin-top: 20px;
+    display: inline-block;
+    height: 35px;
+    line-height: 35px;
+    border: 1px solid #4BBE45;
+    background: #4BBE45;
+    color: #fff;
+    font-size: 14px;
+    padding: 0 20px;
+    border-radius: 14px;
+    text-align: center;
+    transition: all 0.3s ease 0.2s;
+    opacity: 0;
+    width: 100px;
+
+}
+.personHealthItem .box-btnDetail {
+position: absolute;
+bottom: 10px;
+
+}
+.personHealthItem .box-btnDetail{
+    margin-left: 50%;
+    transform: translate(-50%,0);
+}
+.healthCaseItem:hover .btn-goDetail{
+    opacity: 1;
+    box-shadow: 0 5px 40px rgba(0,0,0,0.1); -webkit-transform: translateY(-10px); -moz-transform: translateY(-10px); transform: translateY(-10px); 
+    
+}
+.healthCaseItem:hover .showMoreImage{
+    background: url("../imgs/showMoreHover.png");
+    background-repeat:no-repeat;    
+    background-size:cover;
+}
+    
+.healthCaseItem:hover {
+    box-shadow: 0 5px 40px rgba(0,0,0,0.1); -webkit-transform: translateY(-10px); -moz-transform: translateY(-10px); transform: translateY(-10px); 
+}
+.caseCenterMn{
+    margin:0 30px;
+}
+.caseImg1{
+    background-image: url("../imgs/doctor1.png");
+}
+.caseImg2{
+    background-image: url("../imgs/doctor2.png");
+}
+.caseImg3{
+    background-image: url("../imgs/doctor5.png");
+}
+.caseImg4{
+    background-image: url("../imgs/doctor3.png");
+}
+.caseImg5{
+    background-image: url("../imgs/doctor4.png");
+}
+.caseImgNone{
+    background-image: none;
+}
+.healthCaseItem-title{
+    font-size: 24px;
+    font-family: PingFangSC;
+    font-weight: 600;
+    color: #333333;
+    line-height: 27px;
+    margin-bottom: 23px;
+}
+.healthCase-p{
+font-size: 14px;
+font-family: PingFangSC;
+font-weight: 500;
+color: #999999;
+line-height: 27px;
+
+}
+.mrt30{
+    margin-top:30px;
+}
+.caseCenterBox{
+    position: absolute;
+    top:50%;
+    left:50%;
+    /* margin-top: 50%; */
+    width:100%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+}
+.showMoreImage{
+    margin:0 auto;
+    width: 69px;
+    height: 69px;
+    background: url("../imgs/showMoreIcon.png");
+    background-repeat:no-repeat;    
+    background-size:cover;
+}
+.showMoreTitle{
+    margin-top: 33px;
+    width:100%;
+    text-align: center;
+    font-size: 24px;
+    font-family: PingFangSC;
+    font-weight: 600;
+    color: #333333;
+    line-height: 41px;
+
+}
+.healthPersonManage{
+   width: 1200px;
+   margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.healthPersonManage .personHealthItem:hover  .showMoreImage{
+    background: url("../imgs/showMoreHover.png");
+    background-repeat:no-repeat;    
+    background-size:cover;
+}
+.healthPersonManage .personHealthItem:hover .peronHethTitle{
+    -webkit-transform: translateY(-20px); -moz-transform: translateY(-20px); transform: translateY(-20px); 
+}
+.healthPersonManage .personHealthItem:hover .peronHethP{
+    -webkit-transform: translateY(-20px); -moz-transform: translateY(-20px); transform: translateY(-20px); 
+}
+.healthPersonManage .personHealthItem:hover{
+    box-shadow: 0 5px 40px rgba(0,0,0,0.1); -webkit-transform: translateY(-10px); -moz-transform: translateY(-10px); transform: translateY(-10px); 
+}
+.healthPersonManage .personHealthItem:hover .btn-goDetail{
+    opacity: 1;
+    box-shadow: 0 5px 40px rgba(0,0,0,0.1); -webkit-transform: translateY(-10px); -moz-transform: translateY(-10px); transform: translateY(-10px); 
+}
+.healthPersonManage .personHealthItem{
+    position: relative;
+    width: 278px;
+    height: 401px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 57px 0px #EFEFEF;
+    border-radius: 5px;
+    background-image: url("../imgs/healthPerson1.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:100% 100%;
+    padding-top:241px;
+    position: relative;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+.healthPersonManage .personHethBg1{
+    background-image: url("../imgs/healthPerson1.png");
+}
+.healthPersonManage .personHethBg2{
+    background-image: url("../imgs/healthPerson2.png");
+}
+.healthPersonManage .personHethBg3{
+    background-image: url("../imgs/healthPerson3.png");
+}
+.bgColorF{
+    background: #fff;
+    
+    
+}
+.phethMn{
+    margin-left:30px;
+}
+.phethMnr{
+    margin-right:30px;
+}
+.peronHethTitle{
+    text-align: center;
+    font-size: 24px;
+    font-family: PingFangSC;
+    font-weight: 600;
+    color: #222222;
+    line-height: 23px;
+    margin-top:35px;
+    margin-bottom: 18px;
+    transition: all 0.3s linear;
+}
+.peronHethP{
+    font-size: 14px;
+    font-family: PingFangSC;
+    font-weight: 500;
+    color: #999999;
+    line-height: 23px;
+    text-align: center;
+
+    transition: all 0.3s linear;
+}
+.healthPersonManage  .personHethTop{
+    background-image: none;
+    padding-top: 0;
+}

@@ -1,0 +1,136 @@
+.navBar{
+    height: 36px;
+    font-size: 12px;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: #333333;
+    line-height: 36px;
+    width: 1200px;
+    margin:15px auto 15px;
+
+}
+.cnItem{
+    width: 803px;
+    height: 140px;
+    border-bottom:2px dashed #aaa;
+    margin-bottom: 32px;
+}
+
+.cnItem .title{
+    font-size: 18px;
+    font-family: Microsoft YaHei;
+    font-weight: bold;
+    color: #333333;
+    line-height: 18px;
+
+}
+.cnItem p{
+    display: -webkit-box;
+    -webkit-line-clamp:2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    font-size: 14px;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: #555555;
+    line-height: 26px;
+    margin:15px 0;
+    margin-bottom: 10px;
+    
+}
+.cnItem .time{
+font-size: 14px;
+font-family: Microsoft YaHei;
+font-weight: 400;
+color: #999999;
+line-height: 26px;
+
+}
+.layui-laypage{
+    width: 700px;
+}
+.layui-tab-content{
+    background: #fff;
+}
+.newDetail .newsTitle{
+    height: 28px;
+    font-size: 28px;
+    font-family: Microsoft YaHei;
+    font-weight: bold;
+    color: #333333;
+    line-height: 36px;
+   margin-bottom: 20px; 
+
+}
+.newDetail .time{
+font-size: 14px;
+font-family: Microsoft YaHei;
+font-weight: 400;
+color: #999999;
+line-height: 26px;
+display:inline-block;
+
+}
+.newDetail .from{
+    font-size: 14px;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: #999999;
+    line-height: 26px;
+    display:inline-block;
+    margin-left: 114px;
+}
+.newDetail .p1{
+    width: 803px;
+    font-size: 14px;
+font-family: Microsoft YaHei;
+font-weight: 400;
+color: #555555;
+line-height: 26px;
+margin-top: 30px;
+margin-bottom: 40px;
+}
+.newDetail .nodeTitle{
+    font-size:  18px;
+    color: #555;
+    font-weight:bold;
+    margin-top: 40px;
+}
+.nextBox{
+    width: 803px;
+    height: 80px;
+    border:1px dashed #555;
+    padding:20px;
+    margin-bottom: 60px;
+}
+.nextBox .back{
+    width: 214px;
+    height: 14px;
+    font-size: 14px;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: #999999;
+    line-height: 26px;
+cursor: pointer;
+    
+}
+.nextBox .next{
+    width: 503px;
+height: 15px;
+font-size: 14px;
+font-family: Microsoft YaHei;
+font-weight: 400;
+color: #999999;
+cursor: pointer;
+
+line-height: 26px;
+margin-top: 15px;
+
+}
+.nextBox .next:hover{
+    color: #45B233;
+}
+.nextBox .back:hover{
+    color: #45B233;
+}

@@ -1,0 +1,246 @@
+.navBar{
+    height: 36px;
+    font-size: 12px;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: #333333;
+    line-height: 36px;
+    margin:15px 0;
+}
+.box-choisePlan{
+    /* display: flex;
+    justify-content: space-between; */
+    overflow: hidden;
+}
+.box-choisePlan .right{
+    display: inline-block;
+    margin-left:78px;
+}
+.box-choisePlan .right .title{
+    width: 173px;
+    height: 28px;
+    font-size: 28px;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: #333333;
+    line-height: 36px;
+    
+    
+}
+.box-choisePlan .right img{
+position: relative;
+top:-2px;
+margin-right: 5px;
+}
+.ml40{
+    margin-left: 40px;
+}
+.box-choisePlan .right .text{
+    width: 382px;
+    height: 116px;
+    font-size: 14px;
+    font-family: Microsoft YaHei;
+    font-weight: Regular;
+    color: #999999;
+    line-height: 34px;
+    margin-top: 54px;
+}
+.box-choisePlan .right .text span{
+    color:#555555;
+    font-size: 14px;
+    font-weight: bold;
+}
+.planChoise{
+    font-size: 24px;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: #333333;
+    line-height: 36px;
+    margin-top: 51px;
+}
+.btn-box {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+.btn-box .btn-item{
+    width: 224px;
+    height: 46px;
+    border:1px dashed #E7E7E7;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: #555555;
+    line-height: 46px;
+    text-align: center;
+    cursor: pointer;
+    
+}
+.btn-Phone{
+    width: 268px;
+    height: 46px;
+    background: linear-gradient(-40deg, #45B233, #67C757);
+    line-height: 46px;
+    text-align: center;
+    color:#fff;
+    border-radius: 5px;
+    margin-top: 35px;
+}
+.callPhone{
+    font-size: 14px;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: #999999;
+    line-height: 36px;
+    margin-top:20px;
+    margin-bottom: 50px;
+}
+
+.callPhone .bold{
+    font-size: 26px;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: #555555;
+    line-height: 36px;
+    margin:0 20px;
+    
+}
+.optionsBox{
+    border-top:1px solid #ddd;
+    border-bottom: 1px solid #ddd;;
+}
+.options{
+    width: 1200px;
+    margin:0 auto;
+}
+.option-item{
+    width:204px;
+    height:80px;
+    line-height: 80px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    color: #000000;
+    display: inline-block;
+}
+.option-item:hover{
+    color: #45B233;
+    border-bottom: 2px solid #45B233;
+}
+.optionChoised{
+    color: #45B233;
+    border-bottom: 2px solid #45B233;
+}
+.productDetailBox{
+    /* padding:0 19%; */
+    width: 1200px;
+    margin:0 auto;
+}
+.productDetailBox .productDetailItem{
+    width: 100%;
+  position: relative;
+
+
+}
+
+.boxQr{
+    width: 100%;height: 184px;
+    background: url("../imgs/ehmanage/bg7.png");
+    background-repeat:no-repeat;    
+    background-size:cover;
+}
+.pCustomer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.seInstruction{
+    width:1200px;
+    margin:0 auto;
+    padding-top:60px;
+}
+.seInstruction .title{
+    margin-top: 0px;
+    width: 285px;
+    height: 51px;
+    font-size: 36px;
+    font-family: Microsoft YaHei;
+    font-weight: bold;
+    color: #555555;
+    line-height: 51px;
+    margin-bottom: 30px; 
+}
+.seInstruction p{
+    font-size:20px;
+    color:#777777;
+font-weight: Regular;
+line-height: 52px;
+}
+.seInstruction p span{
+font-weight: Bold;
+color:#555555;
+font-size: 26px;
+}
+.processBox{
+    display: flex;
+    
+}
+.processBox .left{
+  width: 44px;
+  height: 356px;  
+  position: relative;
+  margin-right: 30px;
+}
+.merit .title{
+    height: 51px;
+    font-size: 30px;
+    font-family: Microsoft YaHei;
+    font-weight: bold;
+    color: #45B233;
+    line-height: 51px;
+    margin:0;
+}
+.merit P{
+    width: 214px;
+height: 87px;
+font-size: 16px;
+font-family: Microsoft YaHei;
+font-weight: 400;
+color: #666666;
+line-height: 35px;
+margin-top:10px;
+
+}
+.seInstructionBox{
+    background: #F0F0F0;
+}
+.disclaimer{
+  
+    background: #f0f0f0;
+    padding-top: 104px;
+}
+.disclaimer .disBody{
+    width:1200px;
+    margin:0 auto;
+    padding-bottom: 78px;
+}
+.disclaimer .title{
+    font-size: 36px;
+    font-family: Microsoft YaHei;
+    font-weight: bold;
+    color: #555555;
+    line-height: 36px;
+
+}
+.disclaimer P{
+    margin-top: 40px;
+    width: 889px;
+height: 52px;
+font-size: 16px;
+font-family: Microsoft YaHei;
+font-weight: 400;
+color: #666666;
+line-height: 52px;
+
+}
