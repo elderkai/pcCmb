@@ -242,3 +242,20 @@ transform: translate(-50%,0);
 display: flex;
 justify-content: space-around;
 }
+.bottom_icon{
+    position: relative;
+}
+.bottom_icon .icon_title{
+    position: absolute;
+    bottom:0;
+    left:100px;
+    width: 97px;
+    height: 14px;
+    font-size: 14px;
+    font-family: FZZhengHeiS-M-GB;
+    font-weight: 400;
+    color: #45B233;
+    line-height: 25px;
+    bottom: 7px;
+    left: 65px;
+}
