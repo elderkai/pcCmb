@@ -28,6 +28,9 @@
     height:100%;
     min-width: 600px;
 }
+.nav-item{
+    min-width: 1200px;
+}
 .banner-left{
 
 }
@@ -41,8 +44,9 @@
     line-height: 41px;
 }
 .company-icon{
-    width:100%;
+    width: 1200px;;
     height:98px;
+    margin:0 auto;
     background: #fff;
    
 }
@@ -55,7 +59,14 @@
 .nav-box{
 width: 100%;
 background: #45B233;
+min-width: 1200px;;
 
+}
+.layui-carousel{
+    min-width: 1200px;
+}
+.layui-carousel-arrow:hover, .layui-carousel-ind ul:hover{
+    background: none;
 }
 .companyIcon2{
     margin-left: 12px;

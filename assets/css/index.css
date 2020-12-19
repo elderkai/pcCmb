@@ -46,8 +46,10 @@ line-height: 64px;
 }
 .nav-item-box{
     width: 474px;
-    margin-left: 24.5%;
-    margin-top:112px;
+    margin: 0 auto;
+    margin-top: 112px;
+    position: relative;
+    left: -184px;
 }
 .icon-img-title{
     width:100%;
