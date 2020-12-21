@@ -71,6 +71,8 @@ min-width: 1200px;;
 }
 .companyIcon2{
     margin-left: 12px;
+    position: relative;
+    top:-6px;
 }
 .showMoreIcon{
     top:0;
@@ -95,7 +97,7 @@ body .layui-nav{
     display: none;
 }
 .layui-nav .layui-nav-item{
-    line-height: 40px;
+    line-height: 48px;
 }
 .nav-item-bottom{
     margin-top:62px;
