@@ -83,6 +83,7 @@ body .layui-nav{
 }
 .layui-nav .layui-nav-item a{
     padding:0 50px;
+    font-size: 16px;
 }
 .layui-nav .layui-this:after {display: none;}
 .layui-nav .layui-this a
