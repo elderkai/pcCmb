@@ -7,10 +7,15 @@
     line-height: 36px;
     margin:15px 0;
 }
+.container{
+    width: 1200px;
+    margin:0 auto;
+}
 .box-choisePlan{
     /* display: flex;
     justify-content: space-between; */
     overflow: hidden;
+    display: flex;
 }
 .box-choisePlan .right{
     display: inline-block;
@@ -36,7 +41,7 @@ margin-right: 5px;
     margin-left: 40px;
 }
 .box-choisePlan .right .text{
-    width: 382px;
+    width: 444px;
     height: 116px;
     font-size: 14px;
     font-family: Microsoft YaHei;
@@ -56,7 +61,7 @@ margin-right: 5px;
     font-weight: 400;
     color: #333333;
     line-height: 36px;
-    margin-top: 51px;
+    margin-top: 58px;
 }
 .btn-box {
     display: flex;
