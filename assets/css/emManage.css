@@ -15,6 +15,7 @@ background-size:cover;
 }
 .nav-item-box{
 width: 870px;
+left:0;
 }
 .nav-icon-img{
     margin:0 auto;

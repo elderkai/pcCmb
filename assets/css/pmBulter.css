@@ -196,10 +196,10 @@ font-size: 26px;
     
 }
 .processBox .left{
-  width: 44px;
-  height: 356px;  
-  position: relative;
-  margin-right: 30px;
+    width: 46px;
+    height: 411px;
+    position: relative;
+    margin-right: 30px;
 }
 .merit .title{
     height: 51px;
@@ -222,11 +222,8 @@ margin-top:10px;
 
 }
 .seInstructionBox{
-    background: #F0F0F0;
 }
 .disclaimer{
-  
-    background: #f0f0f0;
     padding-top: 104px;
 }
 .disclaimer .disBody{
@@ -252,4 +249,35 @@ font-weight: 400;
 color: #666666;
 line-height: 52px;
 
+}
+.layui-timeline{
+    width: 1200px;
+    margin:0 auto;
+    
+}
+.layui-timeline .layui-timeline-title{
+    font-weight: Bold;
+    color: #555555;
+    font-size: 26px;
+}
+.layui-timeline .iconStep{
+    position: relative;
+    left: -16px;
+}
+.layui-timeline-content {
+    padding-left: 60px;
+    position: relative;
+    top: -32px;
+}
+.layui-timeline-content p{
+    font-size: 20px;
+    color: #777777;
+    font-weight: Regular;
+    line-height: 52px;
+}
+.layui-timeline-item{
+    padding-bottom: 0;
+}
+.setmrt{
+    padding-top: 40px;
 }
