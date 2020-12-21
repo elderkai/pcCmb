@@ -152,6 +152,12 @@ body .layui-nav{
     line-height: 41px;
 
 }
+.layui-nav .layui-nav-item a{
+    color:#fff;
+}
+.layui-nav .layui-this a{
+    color:#45B233;
+}
 .aboutUs .rightBox {
     width:696px;
     height:420px;
