@@ -41,6 +41,7 @@
 }
 .banner-right .cservice img{
     position: relative;
+    width: 15px;
     top:-2px;
 }
 .banner-btn{
@@ -107,6 +108,10 @@ body .layui-nav{
 .layui-nav .layui-this{
     background:#FAFAFA;
     color:#45B233;
+}
+
+.layui-nav .layui-this a:hover{
+    color: #45B233;
 }
 .layui-nav-bar{
     display: none;
@@ -231,6 +236,15 @@ body .layui-nav{
     line-height: 20px;
     
 }
+/* .box-choisePlan .clickItem:hover{
+    border:2px solid #45B233;
+} */
+.box-choisePlan .clickItem{
+    cursor: pointer;
+}
+.checked_product{
+    border:2px solid #45B233;
+}
 .home-bottom{
     height: 150px;
     width: 100%;
@@ -289,6 +303,7 @@ justify-content: space-around;
     position:absolute;
     right:30px;
     top:995px;
+    width: 70px;
 }
 .fixBtn .btn_ite{
     width: 60px;

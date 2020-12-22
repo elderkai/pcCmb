@@ -76,7 +76,7 @@ font-family: Source Han Sans CN;
 font-weight: 500;
 color: #57BD46;
 line-height: 20px;
-padding:19px;
+padding:19px 30px;
 border:1px solid #57BD46;
 display: inline-block;
 border-radius: 50px;
@@ -87,7 +87,7 @@ margin-bottom: 60px;
 transform: translate(-50%,0);
 }
 .healthPersonManage{
-margin-bottom: 50px;
+margin-bottom: 40px;
 }
 .content{padding-bottom: 0;}
 .healthPersonManage .personHealthItem:hover .peronHethTitle{

@@ -343,3 +343,16 @@ margin:0 auto;
     margin: 0 auto;
     position: relative;
 }
+.lbNav{
+    width: 400px;
+    height: 285px;
+    overflow: hidden;
+    position: relative;
+}
+.lbNav .lbNavBody{
+    display: flex;
+    width: 1200px;
+    transition: all 0.3s linear;
+    position:absolute;
+    left: 0;
+}

@@ -30,3 +30,26 @@ layui.use(['layer', 'form'], function(){
       ,count: 1100 //数据总数，从服务端得到
     });
   });
+  window.onscroll=function(){
+    var topScroll =document.documentElement.scrollTop;//滚动的距离,距离顶部的距离
+    var nav = document.getElementById("navBtns");//获取到导航栏id
+    if(topScroll <= 995){
+        //当滚动距离小于250的时候执行下面的内容，也就是让导航栏恢复原状    
+        nav.style.position = 'absolute';
+        nav.style.top= '995px';
+    }else{      
+        //当滚动距离大于250px时执行下面的东西
+        nav.style.position = 'fixed';
+        nav.style.top = '90px';
+        nav.style.right = '30px'
+     
+    }
+
+}
+$('#btnGoTop').on('click', function() {
+
+  document.documentElement.scrollTop=0;
+});
+$('.clickItem').on('click', function() {
+console.log("a");
+});
