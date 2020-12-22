@@ -186,7 +186,7 @@ body .layui-nav{
 .aboutUs .rightBox .right-header{
     display: flex;
     justify-content: space-between;
-    border-bottom:2px dashed #999;
+    border-bottom:1px solid #ececec;
     padding-bottom:12px;
     margin-bottom: 28px;
 }
@@ -221,12 +221,12 @@ body .layui-nav{
     
 }
 .aboutUs .rightBox .newsItem .newItem-right .news-item-text{
-    margin-top:15px;
+    margin-top:13px;
     width: 426px;
     height: 53px;
     font-size: 12px;
     font-family: Source Han Sans CN;
-    font-weight: 550;
+    font-weight: 540;
     color: #777777;
     line-height: 20px;
     
