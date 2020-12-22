@@ -181,7 +181,7 @@ color:#ccc;
     transition: all 0.3s ease 0.2s;
     opacity: 0;
     width: 100px;
-
+    font-weight: bold;
 }
 .personHealthItem .box-btnDetail {
 position: absolute;
