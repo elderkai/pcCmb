@@ -48,7 +48,7 @@ margin-right: 5px;
     font-weight: Regular;
     color: #999999;
     line-height: 34px;
-    margin-top: 54px;
+    margin-top: 41px;
 }
 .box-choisePlan .right .text span{
     color:#555555;
@@ -313,6 +313,7 @@ margin-top:10px;
     max-width: 160px;
     height: 80px;
     line-height: 80px;
+    font-weight: bold;
 }
 .van-tab__pane{
     width: 803px!important;

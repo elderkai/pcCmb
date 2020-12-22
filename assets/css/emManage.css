@@ -193,6 +193,7 @@ background: #f0f0f0;
 }
 .layui-tab-title li{
     width:144px;
+    font-weight: bold;
 }
 .layui-laypage-prev{
     margin-right: 4px!important;
