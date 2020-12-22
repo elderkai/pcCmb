@@ -12,7 +12,9 @@
 .cnItem{
     width: 803px;
     height: 140px;
-    border-bottom:2px dashed #aaa;
+    border-bottom:1px solid  #E0E0E0;
+    
+/* background: #E0E0E0; */
     margin-bottom: 32px;
 }
 
