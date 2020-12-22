@@ -82,9 +82,11 @@ line-height: 64px;
 }
 .serviceContent{
     display: flex;
-    justify-content:center;
+    justify-content:space-between;
     box-sizing: border-box;
-    padding:56px;
+    width:1200px;
+    margin:0 auto;
+    padding:56px 0;
 }
 .serviceContent .content-Box .title{
     display: inline-block;
@@ -114,10 +116,11 @@ color:#ccc;
     text-align: center;
     font-size: 18px;
     font-family: PingFangSC;
-    font-weight: 500;
+    font-weight: Medium;
     color: #999999;
     line-height: 21px;
     margin-top:20px;
+
 
 }
 .content .titleBox{
@@ -273,6 +276,7 @@ line-height: 27px;
    margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 90px;
 }
 .healthPersonManage .personHealthItem:hover  .showMoreImage{
     background: url("../imgs/showMoreHover.png");
@@ -321,6 +325,12 @@ line-height: 27px;
     background: #fff;
     
     
+}
+.banner .banner-right .banner-img{
+    width: 15px;
+}
+.banner-btn .border_right{
+    border-right: 1px solid #ddd;
 }
 .phethMn{
     margin-left:30px;

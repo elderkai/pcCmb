@@ -82,10 +82,14 @@ display: inline-block;
 border-radius: 50px;
 margin-left: 50%;
 height: 57px;
-margin-top: 20px;
-margin-bottom: 50px;
+margin-top: 10px;
+margin-bottom: 60px;
 transform: translate(-50%,0);
 }
+.healthPersonManage{
+margin-bottom: 50px;
+}
+.content{padding-bottom: 0;}
 .healthPersonManage .personHealthItem:hover .peronHethTitle{
     -webkit-transform: translateY(0px); -moz-transform: translateY(0px); transform: translateY(0px); 
 }

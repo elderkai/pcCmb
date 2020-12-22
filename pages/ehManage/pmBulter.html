@@ -8,31 +8,39 @@
     <link rel="stylesheet" href="../../lib/layui/css/layui.css">
     <link rel="stylesheet" href="../../assets/css/page.css">
     <link rel="stylesheet" href="../../assets/css/pmBulter.css">
+    <link rel="stylesheet" href="../../lib/vant@2.11.2/index.css">
 </head>
+
 <body>
-    <div class="body">
+    <div id="vue" class="body">
         <div class="banner">
             <div class="banner-body">
                 <div class="banner-left">
-                    <div class="banner-btn">
+                    <div class="banner-btn ">
                         <img class="banner-img" src="../../assets/imgs/wx.png" alt="">
                         微信号
                         <img style="width:8px;height:5px;" class="banner-img showMoreIcon"
                             src="../../assets/imgs/more.png" alt="">
-                    </div>|
+                    </div> <span style="color:rgba(191, 191, 191, 1)">|</span>
                     <div class="banner-btn">
-                        <img class="banner-img" src="../../assets/imgs/email.png" alt="">
-                        官方邮箱</div>
+                        <img style="width: 12px;height: 11px;" class="banner-img" src="../../assets/imgs/email.png"
+                            alt="">
+                        官方邮箱
+                    </div>
+                    &nbsp;
+                    <span style="color:rgba(191, 191, 191, 1)">|</span>
                     <div class="banner-btn">
-                        <img class="banner-img" src="../../assets/imgs/collection.png" alt="">
-                        官方邮箱</div>
+                        <img class="banner-img" style="width: 15px;height: 12px;" src="../../assets/imgs/collection.png"
+                            alt="">
+                        收藏本站</div>
                 </div>
                 <div class="banner-right">
                     <div class="banner-btn">售前产品咨询 400-820-2287</div>
-
+                    &nbsp;
                     |<div class="banner-btn">
                         <img class="banner-img" src="../../assets/imgs/customer.png" alt="">
                         在线客服</div>
+
                 </div>
             </div>
         </div>
@@ -55,7 +63,8 @@
                 <li class="layui-nav-item"><a href="">企业动态</a></li>
             </ul>
         </div>
-        <div  class="container">
+        <div class="container">
+
             <div class="navBar">首页 > 企业健康管理 > 私属医疗管家</div>
             <div class="box-choisePlan">
                 <img style="width: 400px;height: 400px;" src="../../assets/imgs/pmBulter/bg1.png" alt="">
@@ -76,7 +85,7 @@
                         周-至周日08: 00- 20: 00 (春节法定节假日除外)。<br />
                         <span>服务时效：</span>
                         医生回复时效为接到客户需求后6个工作小时内。
-                        <br/>
+                        <br />
                         <span>
                             服务方式：
                         </span>
@@ -90,14 +99,14 @@
                         咨询时客户需使用真实姓名和身份证号。
 
                     </p>
-                    <p class="planChoise">
+                    <!-- <p class="planChoise">
                         <img class="" style="width: 22px;height: 20px;" src="../../assets/imgs/pmBulter/icon5.png"
                             alt="">
                         请选择方案</p>
                     <div class="btn-box">
                         <div class="btn-item">标准版</div>
                         <div class="btn-item">高端版</div>
-                    </div>
+                    </div> -->
                     <div class="btn-Phone">
                         <img style="width: 22px;height: 18px;top:0;" src="../../assets/imgs/pmBulter/icon4.png" alt="">
                         在线咨询
@@ -111,22 +120,118 @@
                 </div>
             </div>
         </div>
-        <div class="optionsBox">
-            <div class="options">
-                <div class="option-item optionChoised">产品详情</div>
-                <div class="option-item">服务须知</div>
-                <div class="option-item">使用流程</div>
-                <div class="option-item">免责声明</div>
-                <div class="option-item">常用问题</div>
-            </div>
-        </div>
-        <div class="productDetailBox">
-            <div class="productDetailItem">
-                <img src="../../assets/imgs/pmBulter/bg2.png" style="width: 65%;position: absolute;top: 20px;left:0"
-                    alt="">
-                <img src="../../assets/imgs/pmBulter/bg3.png" style="width: 65%;" alt="">
+    
+        <div class="tabsBox">
+            <van-tabs scrollspy sticky>
+                <van-tab title="产品详情">
+                    <img src="../../assets/imgs/pmBulter/bg2.png"
+                        style="width: 800px;position: absolute;top: 95px;left:0" alt="">
+                    <img src="../../assets/imgs/pmBulter/bg3.png" style="width: 800px" alt="">
+                </van-tab>
+                <van-tab title="服务须知">
+                    <div class="seInstruction">
+                        <div class="title">服务须知</div>
+                        <p><span>服务电话：</span>400-820-2287</p>
+                        <p><span>服务时间: </span>周一至周日08:00—20: 00(春节法定节假日除外)</p>
+                        <p><span>服务时效: </span> 医生回复时效为接到客户需求后6个工作小时内</p>
+                        <p><span>
+                                服务方式:
+                            </span>
+                            所有医生咨询均以三方通话的形式在线提供
+                        </p>
+                        <p><span>
+                                信息提供:
+                            </span>
+                            咨询时客户需使用真实姓名和身份证号
+                        </p>
+                    </div>
+                </van-tab>
+                <van-tab title="使用流程">
+                    <div class="seInstruction">
+                        <div class="title">使用流程</div>
+                    </div>
+                    <ul class="layui-timeline">
+                        <li class="layui-timeline-item">
+                            <img class="iconStep" style="width: 44px;height: 44px;"
+                                src="../../assets/imgs/pmBulter/icon7.png" alt="">
+                            <div class="layui-timeline-content layui-text">
+                                <h3 class="layui-timeline-title">服务激活</h3>
+                                <p>
+                                    客户致电服务热线或由专业护士主动外呼客户，进行私属医疗管家服务的激活。
+                                </p>
+                            </div>
+                        </li>
+                        <li class="layui-timeline-item">
+                            <img class="iconStep" style="width: 44px;height: 44px;"
+                                src="../../assets/imgs/pmBulter/icon8.png" alt="">
+                            <div class="layui-timeline-content layui-text">
+                                <h3 class="layui-timeline-title">健康档案建立
+                                </h3>
+                                <p>
+                                    为客户建立健康档案，健康专员将在联系到客户后为其建立个人健康档案并制定个人健管计划。
+                                </p>
+                            </div>
+                        </li>
+                        <li class="layui-timeline-item">
+                            <img class="iconStep" style="width: 44px;height: 44px;"
+                                src="../../assets/imgs/pmBulter/icon9.png" alt="">
+                            <div class="layui-timeline-content layui-text">
+                                <h3 class="layui-timeline-title">咨询解答及健康关怀
+                                </h3>
+                                <p>
+                                    为客户提供日常健康管理方面问题的专业解答，同时专业护士会为客户做定期节气节日关怀与定制化健康管理追踪。
+
+
+
+                                </p>
+                            </div>
+                        </li>
+                        <li class="layui-timeline-item">
+                            <img class="iconStep" style="width: 44px;height: 44px;"
+                                src="../../assets/imgs/pmBulter/icon10.png" alt="">
+                            <div class="layui-timeline-content layui-text">
+                                <h3 class="layui-timeline-title">专业医生转接
+                                </h3>
+                                <p>
+                                    客户致电服务热线或由专业护士主动外呼客户，进行私属医疗管家服务的激活。
+
+                                </p>
+                            </div>
+                        </li>
+
+                    </ul>
+                    <div class="seInstruction setmrt">
+                        <div class="title">服务团队优势</div>
+                        <div class="merits">
+                            <div style="" class="merit">
+                                <div style="width: 100%;text-align: center;" class="title">专业护士团队</div>
+                                <p>100%由专业的注册护士组成，用美国和新加坡护理模式进行的专业化团队管理。</p>
+                            </div>
+                            <div style="margin:0 15px;" class="merit">
+                                <div style="width: 100%;text-align: center;" class="title">资深医生团队</div>
+                                <p>均是具有三甲医院资质、并有十五年以上工作经验医生组成。</p>
+                            </div>
+                            <div style="" class="merit">
+                                <div style="width: 100%;text-align: center;" class="title">医疗专家委员会</div>
+                                <p>由来自全国40多个医院、覆盖33个科室类别的100多位资深主任级别专科医生组成的招商信诺专家委员会，应对复杂病症的咨询需要。</p>
+                            </div>
+                        </div>
+                    </div>
+                </van-tab>
+                <van-tab title="免责声明">
+                    <div class="disclaimer">
+                        <div class="disBody">
+                            <div class="title">免责声明</div>
+                            <p>本公司所提供的所有医疗咨询仅供参考，不能替代任何临床医生的医疗诊断和处方。所有检查、治疗及用药均以线下医院临床医生诊断为标准，如有明显身体不适，请尽快至医院就诊。</p>
+                        </div>
+                    </div>
+
+                </van-tab>
+                <van-tab title="常用问题">
+                    <div></div>
+                </van-tab>
                 <div
-                    style="width: 320px;height: 304px;background: #fff;border-radius: 5px;padding: 30px;margin-top: 20px;position: absolute;right:0;top:0">
+                    style="width: 320px;height: 304px;background: #fff;border-radius: 5px;padding: 30px;margin-top: 80px;position: absolute;right:0;top:0">
                     <p style="text-align: left;" class="title"><img
                             style="width: 26px;height: 28px;position: relative;top:-2px;margin-right: 5px;"
                             src="../../assets/imgs/ehmanage/icon3.png" alt=""> 官方微信公众号</p>
@@ -134,18 +239,18 @@
                         <img src="../../assets/imgs/ehmanage/qr.png"
                             style="width: 110px;height: 110px;margin:23px 0 0 75px" alt="">
                         <p style="width: 100%;
-                            text-align: center;
-                            font-size: 16px;
-                            font-family: Source Han Sans CN;
-                            font-weight: bold;
-                            color: #FFFFFF;
-                            line-height: 20px;
-                            margin-top: 18px;
-                            ">招商信诺健康管理有限责任公司</p>
+                        text-align: center;
+                        font-size: 16px;
+                        font-family: Source Han Sans CN;
+                        font-weight: bold;
+                        color: #FFFFFF;
+                        line-height: 20px;
+                        margin-top: 18px;
+                        ">招商信诺健康管理有限责任公司</p>
                     </div>
                 </div>
                 <div class="lMessage"
-                    style="width: 320px; height: 260px;border-radius: 5px; background: #fff;padding: 30px;margin-top: 20px;position: absolute;right:0;top:344px">
+                    style="width: 320px; height: 260px;border-radius: 5px; background: #fff;padding: 30px;margin-top: 80px;position: absolute;right:0;top:344px">
                     <p class="title"><img
                             style="width: 26px;height: 28px;position: relative;top:-2px;margin-right: 5px;"
                             src="../../assets/imgs/ehmanage/icon2.png" alt=""> 留言反馈</p>
@@ -154,23 +259,23 @@
                             src="../../assets/imgs/ehmanage/icon1.png" alt="">
                         <div style="width: 183px;">
                             <p style="
-                                font-size: 16px;
-                                font-family: Source Han Sans CN;
-                                font-weight: bold;
-                                color: #555555;
-                                line-height: 36px;">电话客服</p>
+                            font-size: 16px;
+                            font-family: Source Han Sans CN;
+                            font-weight: bold;
+                            color: #555555;
+                            line-height: 36px;">电话客服</p>
                             <p style="
-                                font-size: 26px;
-                                font-family: Microsoft YaHei;
-                                font-weight: 400;
-                                color: #555555;
-                                line-height: 36px;">400-820-2287</p>
+                            font-size: 26px;
+                            font-family: Microsoft YaHei;
+                            font-weight: 400;
+                            color: #555555;
+                            line-height: 36px;">400-820-2287</p>
                             <p style="
-                                font-size: 14px;
-                                font-family: Microsoft YaHei;
-                                font-weight: 400;
-                                color: #999999;
-                                line-height: 36px;">周一至周日08:00-18:00</p>
+                            font-size: 14px;
+                            font-family: Microsoft YaHei;
+                            font-weight: 400;
+                            color: #999999;
+                            line-height: 36px;">周一至周日08:00-18:00</p>
                         </div>
                     </div>
                     <div
@@ -180,149 +285,17 @@
                         在线咨询
                     </div>
                 </div>
-            </div>
+            </van-tabs>
+
         </div>
-        <div class="seInstructionBox">
-            <div class="seInstruction">
-                <div class="title">服务须知</div>
-                <p><span>服务电话：</span>400-820-2287</p>
-                <p><span>服务时间: </span>周一至周日08:00—20: 00(春节法定节假日除外)</p>
-                <p><span>服务时效: </span> 医生回复时效为接到客户需求后6个工作小时内</p>
-                <p><span>
-                        服务方式:
-                    </span>
-                    所有医生咨询均以三方通话的形式在线提供
-                </p>
-                <p><span>
-                        信息提供:
-                    </span>
-                    咨询时客户需使用真实姓名和身份证号
-                </p>
-            </div>
-            <div class="seInstruction">
-                <div class="title">使用流程</div>
-                <!-- <div class="processBox">
-                    <div class="left">
-                        <img style="height: 100%;margin-left: 50%;transform: translate(-50%,0);"
-                            src="../../assets/imgs/pmBulter/icon11.png" alt="">
-                        <img style="width: 44px;height: 44px;position: absolute;left:0"
-                            src="../../assets/imgs/pmBulter/icon7.png" alt="">
-                        <img style="width: 44px;height: 44px;position: absolute;left:0;top:106px"
-                            src="../../assets/imgs/pmBulter/icon8.png" alt="">
-                        <img style="width: 44px;height: 44px;position: absolute;left:0;top:210px;"
-                            src="../../assets/imgs/pmBulter/icon9.png" alt="">
-                        <img style="width: 44px;height: 44px;position: absolute;left:0;top:365px;"
-                            src="../../assets/imgs/pmBulter/icon10.png" alt="">
-                    </div>
-                    <div class="right">
-
-                        <p><span>
-                                服务激活
-                            </span> <br />
-                            客户致电服务热线或由专业护士主动外呼客户，进行私属医疗管家服务的激活。
-                        </p>
-                        <p><span>
-                                健康档案建立
-                            </span> <br />
-                            为客户建立健康档案，健康专员将在联系到客户后为其建立个人健康档案并制定个人健管计划。
-                        </p>
-                        <p><span>
-                                咨询解答及健康关怀
-                            </span> <br />
-                            为客户提供日常健康管理方面问题的专业解答，同时专业护士会为客户做定期节气节日关怀与定制化健康管理追踪。
-                        </p>
-                        <p><span>
-
-                                专业医生转接
-
-                            </span> <br />
-
-                            如需要转接医生解答，将在6个工作小时内安排三甲医院背景医生进行答疑解惑。
-
-                        </p>
-                    </div>
-                </div> -->
-
-            </div>
-            <ul class="layui-timeline">
-                <li class="layui-timeline-item">
-                    <img class="iconStep" style="width: 44px;height: 44px;"
-                    src="../../assets/imgs/pmBulter/icon7.png" alt="">
-                  <div class="layui-timeline-content layui-text">
-                    <h3 class="layui-timeline-title">服务激活</h3>
-                    <p>
-                        客户致电服务热线或由专业护士主动外呼客户，进行私属医疗管家服务的激活。
-                    </p>
-                  </div>
-                </li>
-                <li class="layui-timeline-item">
-                    <img class="iconStep"  style="width: 44px;height: 44px;"
-                    src="../../assets/imgs/pmBulter/icon8.png" alt="">
-                  <div class="layui-timeline-content layui-text">
-                    <h3 class="layui-timeline-title">健康档案建立
-                    </h3>
-                    <p>
-                        为客户建立健康档案，健康专员将在联系到客户后为其建立个人健康档案并制定个人健管计划。
-                    </p>
-                  </div>
-                </li>
-                <li class="layui-timeline-item">
-                    <img class="iconStep"  style="width: 44px;height: 44px;"
-                    src="../../assets/imgs/pmBulter/icon9.png" alt="">
-                  <div class="layui-timeline-content layui-text">
-                    <h3 class="layui-timeline-title">咨询解答及健康关怀
-                    </h3>
-                    <p>
-                        为客户提供日常健康管理方面问题的专业解答，同时专业护士会为客户做定期节气节日关怀与定制化健康管理追踪。
-
-
-                    
-                    </p>
-                  </div>
-                </li>
-                <li class="layui-timeline-item">
-                    <img class="iconStep"  style="width: 44px;height: 44px;"
-                    src="../../assets/imgs/pmBulter/icon10.png" alt="">
-                  <div class="layui-timeline-content layui-text">
-                    <h3 class="layui-timeline-title">专业医生转接
-                    </h3>
-                    <p>
-                        客户致电服务热线或由专业护士主动外呼客户，进行私属医疗管家服务的激活。
-
-
-                    
-                    </p>
-                  </div>
-                </li>
+        <!-- <div class="seInstructionBox">
+    
         
-              </ul>
-            <div class="seInstruction setmrt">
-                <div class="title">服务团队优势</div>
-                <div class="merits">
-                    <div style="display: inline-block;width: 283px;height: 216px;background: #fff;border-radius: 5px;padding:49px 36px"
-                        class="merit">
-                        <div style="width: 100%;text-align: center;" class="title">专业护士团队</div>
-                        <p>100%由专业的注册护士组成，用美国和新加坡护理模式进行的专业化团队管理。</p>
-                    </div>
-                    <div style="display: inline-block;width: 283px;height: 216px;background: #fff;border-radius: 5px;padding:49px 36px;margin:0 20px;"
-                        class="merit">
-                        <div style="width: 100%;text-align: center;" class="title">专业护士团队</div>
-                        <p>100%由专业的注册护士组成，用美国和新加坡护理模式进行的专业化团队管理。</p>
-                    </div>
-                    <div style="display: inline-block;width: 283px;height: 216px;background: #fff;border-radius: 5px;padding:49px 36px"
-                        class="merit">
-                        <div style="width: 100%;text-align: center;" class="title">专业护士团队</div>
-                        <p>100%由专业的注册护士组成，用美国和新加坡护理模式进行的专业化团队管理。</p>
-                    </div>
-                </div>
-            </div>
+       
         </div>
         <div class="disclaimer">
-            <div class="disBody">
-                <div class="title">免责声明</div>
-                <p>本公司所提供的所有医疗咨询仅供参考，不能替代任何临床医生的医疗诊断和处方。所有检查、治疗及用药均以线下医院临床医生诊断为标准，如有明显身体不适，请尽快至医院就诊。</p>
-            </div>
-        </div>
+        
+        </div> -->
         <div class="aboutUs">
             <div class="aboutUsBody">
                 <div class="leftBox">
@@ -334,10 +307,11 @@
                         背景和基因
                         <img src="../../assets/imgs/hr.png" style="width:242px;height:2px;margin-left: 18px;" alt="">
                     </div>
-                    <div class="bottom_icon"><img src="../../assets/imgs/logo1.png"  style="width:222px;height:66px;margin-top:42px;" alt="">
+                    <div class="bottom_icon"><img src="../../assets/imgs/logo1.png"
+                            style="width:222px;height:66px;margin-top:42px;" alt="">
                         <div class="icon_title">健&nbsp;&nbsp;&nbsp;康&nbsp;&nbsp;&nbsp;管&nbsp;&nbsp;&nbsp;理</div>
                     </div>
-                   
+
                 </div>
                 <div class="rightBox">
                     <div class="right-header">
@@ -395,11 +369,33 @@
                 </p>
             </div>
         </div>
+   
+        <div class="fixBtn">
+            <div class="btn_ite">
+                <img style="width: 28px;height: 28px;" src="../../assets/imgs/hoverBtn1.png" alt="">
+             </div>
+             <div class="btn_ite">
+                 <img style="width: 27px;height: 13px;" src="../../assets/imgs/hoverBtn2.png" alt="">           
+             </div>
+        </div>
     </div>
     </div>
     <script src="../../lib/layui/layui.js"></script>
     <script src="../../assets/js/page.js"></script>
     <script src="../../assets/js/jquery-1.9.1.min.js"></script>
+    <script src="../../lib/vue/vue.min.js"></script>
+    <script src="../../lib/vant@2.11.2/vant.min.js"></script>
     <script src="../../assets/js/ehManage.js"></script>
+    <script>
+        new Vue({
+            el: '#vue',
+            data() {
+                return {}
+            },
+            mounted() {},
+            methods: {}
+        });
+    </script>
 </body>
+
 </html>

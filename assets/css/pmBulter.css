@@ -90,7 +90,7 @@ margin-right: 5px;
     text-align: center;
     color:#fff;
     border-radius: 5px;
-    margin-top: 35px;
+    margin-top: 60px;
 }
 .callPhone{
     font-size: 14px;
@@ -206,6 +206,20 @@ font-size: 26px;
     position: relative;
     margin-right: 30px;
 }
+
+.merits{
+    display: flex;
+}
+.merit{
+    display: inline-block;
+    width: 283px;
+    height: 316px;
+    background: #fff;
+    border-radius: 5px;
+    padding:49px 36px;
+    
+box-shadow: 0px 11px 9px 0px rgba(237, 237, 237, 0.53);
+}
 .merit .title{
     height: 51px;
     font-size: 30px;
@@ -217,7 +231,7 @@ font-size: 26px;
 }
 .merit P{
     width: 214px;
-height: 87px;
+
 font-size: 16px;
 font-family: Microsoft YaHei;
 font-weight: 400;
@@ -230,11 +244,12 @@ margin-top:10px;
 }
 .disclaimer{
     padding-top: 104px;
+    padding-bottom: 78px;
 }
 .disclaimer .disBody{
-    width:1200px;
+    /* width:1200px; */
     margin:0 auto;
-    padding-bottom: 78px;
+
 }
 .disclaimer .title{
     font-size: 36px;
@@ -247,16 +262,15 @@ margin-top:10px;
 .disclaimer P{
     margin-top: 40px;
     width: 889px;
-height: 52px;
-font-size: 16px;
-font-family: Microsoft YaHei;
-font-weight: 400;
-color: #666666;
-line-height: 52px;
+    font-size: 16px;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: #666666;
+    line-height: 52px;
 
 }
 .layui-timeline{
-    width: 1200px;
+    width: 900px;
     margin:0 auto;
     
 }
@@ -285,4 +299,46 @@ line-height: 52px;
 }
 .setmrt{
     padding-top: 40px;
+}
+.tabsBox{
+    /* width: 1200px; */
+    /* margin:0 auto; */
+    position: relative;
+}
+.van-tabs{
+    /* width: 1200px; */
+    /* z-index: 999; */
+}
+.van-tabs .van-tab{
+    max-width: 160px;
+    height: 80px;
+    line-height: 80px;
+}
+.van-tab__pane{
+    width: 803px!important;
+}
+.van-tabs--line .van-tabs__wrap{
+    height: 80px!important;
+}
+.van-tabs .van-tab--active{
+    font-size: 18px;
+    font-family: Microsoft YaHei;
+    font-weight: bold;
+    color: #45B233;
+    line-height: 80px;
+    border-bottom:3px solid #45B233;
+}
+.van-tabs__nav--line{
+width: 1200px;
+margin:0 auto;
+}
+.van-tabs--line .van-tabs__wrap{
+    border-top: 1px solid rgba(224, 224, 224, 1);
+    border-bottom: 1px solid rgba(224, 224, 224, 1);
+    box-sizing:unset;
+}
+.van-tabs__content{
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
 }

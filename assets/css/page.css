@@ -80,6 +80,7 @@ min-width: 1200px;;
 body .layui-nav{
     background-color: #45B233;
     width: 1200px;
+    padding:0;
 }
 .layui-nav .layui-nav-item a{
     padding:0 50px;
@@ -268,4 +269,27 @@ justify-content: space-around;
     line-height: 25px;
     bottom: 7px;
     left: 65px;
+}
+.fixBtn{
+    position:absolute;
+    right:30px;
+    top:995px;
+}
+.fixBtn .btn_ite{
+    width: 60px;
+    height: 60px;
+    background: #434343;
+    opacity: 0.2;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding:15px;
+    margin-bottom:2px;
+    
+}
+.fixBtn .btn_ite:hover{
+    background: RGBA(69, 178, 51, 1);
+    opacity: 1;
+}
+.fixBtn .btn_ite img{
+    cursor: pointer;
 }
