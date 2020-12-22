@@ -49,7 +49,7 @@ line-height: 64px;
     margin: 0 auto;
     margin-top: 112px;
     position: relative;
-    left: -184px;
+    left: -228px;
 }
 .icon-img-title{
     width:100%;
@@ -57,13 +57,14 @@ line-height: 64px;
     margin-top:25px;
     font-weight: 500;
     font-size: 22px;
+    white-space: nowrap;
 }
 .service-num{
     width: 120px;
     height: 36px;
     font-size: 36px;
     font-family: Source Han Sans CN;
-    font-weight: 500;
+    font-weight: 540;
     color: #555555;
     line-height: 41px;
     margin-top:20px;
@@ -95,7 +96,7 @@ line-height: 64px;
     height: 18px;
     font-size: 18px;
     font-family: Source Han Sans CN;
-    font-weight: 400;
+    font-weight: 550;
     color: #999999;
     line-height: 17px;
     margin-top:20px;
@@ -118,7 +119,7 @@ color:#ccc;
     text-align: center;
     font-size: 18px;
     font-family: PingFangSC;
-    font-weight: Medium;
+    font-weight: 550;
     color: #999999;
     line-height: 21px;
     margin-top:20px;
@@ -237,7 +238,7 @@ bottom: 10px;
 .healthCase-p{
 font-size: 14px;
 font-family: PingFangSC;
-font-weight: 600;
+font-weight: 550;
 color: #999999;
 line-height: 33px;
 
@@ -354,7 +355,7 @@ line-height: 33px;
 .peronHethP{
     font-size: 14px;
     font-family: PingFangSC;
-    font-weight: 500;
+    font-weight: 550;
     color: #999999;
     line-height: 24px;
     text-align: center;

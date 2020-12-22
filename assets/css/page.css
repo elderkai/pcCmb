@@ -20,7 +20,7 @@
     height: 15px;
     position: relative;
     top: 0px;
-    margin:0 10px;
+    margin:0 8px;
 }
 .banner-body{
     display: flex;
@@ -36,6 +36,13 @@
 .banner-left{
 
 }
+.banner-right .cservice{
+    color:#45B233;
+}
+.banner-right .cservice img{
+    position: relative;
+    top:-2px;
+}
 .banner-btn{
     display: inline-block;
     height: 100%;
@@ -44,6 +51,10 @@
     font-weight: 600;
     color: #666666;
     line-height: 41px;
+}
+.nav-icon-box img{
+    margin-left: 50%;
+    transform: translate(-50%,0);
 }
 .company-icon{
     width: 1200px;;
@@ -62,7 +73,10 @@
 width: 100%;
 background: #45B233;
 min-width: 1200px;;
+}
 
+.nav-icon-box{
+    margin:0 44px;
 }
 .layui-carousel{
     min-width: 1200px;
@@ -209,12 +223,12 @@ body .layui-nav{
     
 }
 .aboutUs .rightBox .newsItem .newItem-right .news-item-text{
-    margin-top:15PX;
+    margin-top:15px;
     width: 426px;
     height: 53px;
     font-size: 12px;
     font-family: Source Han Sans CN;
-    font-weight: 400;
+    font-weight: 550;
     color: #777777;
     line-height: 20px;
     
@@ -238,8 +252,10 @@ body .layui-nav{
 .home-bottom .bottomCent .Copyright{
     margin-top:22px;
     margin-bottom: 10px;
+    font-weight:500;
 }
 .home-bottom .bottomCent .record{
+    font-weight:500;
 
 }
 .layui-nav .layui-nav-item{
