@@ -15,7 +15,7 @@ layui.use(['layer', 'form'], function(){
       elem: '#test1'
       ,height:"500px"
       ,interval:3000
-      ,autoplay:false
+      ,autoplay:true
       ,width: '100%' //设置容器宽度
       ,arrow: 'hover' //始终显示箭头
       //,anim: 'updown' //切换动画方式
