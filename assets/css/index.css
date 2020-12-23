@@ -2,7 +2,7 @@
     background-image:url("../imgs/carousel2Big.png");
     background-repeat:no-repeat;    
     background-size:cover;
-    background-position: 0 -238px;
+    /* background-position: 0 -238px; */
 }
 
 .layui-carousel-ind ul :hover{

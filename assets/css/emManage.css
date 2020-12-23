@@ -48,10 +48,20 @@ background: #f0f0f0;
     height: 80px;
     line-height: 81px;
 }
-.layui-tab-title{
-    /* padding: 0 19%; */
+.layui-tab-title .menu_eh{
     width: 1200px;
     margin:0 auto;
+    color: #333333;
+    
+}
+.layui-tab-title .menu_eh li{
+    font-size: 16px;
+}
+.layui-tab-title{
+    /* padding: 0 19%; */
+    /* width: 1200px; */
+    margin:0 auto;
+    background: #fff;
 }
 .layui-tab-content{
     /* padding:0 19%; */
@@ -210,3 +220,7 @@ background: #f0f0f0;
 /* .layui-laypage a, .layui-laypage span{
     margin:0 ;
 } */
+.layui-tab-brief>.layui-tab-title .layui-this{
+    color: #45B233;
+
+}

@@ -2,7 +2,7 @@
 var options = {
     useEasing: true,
     useGrouping: true,
-    separator: ',',
+    separator: '',
     decimal: '.'
   };
   var money1 = new CountUp('money1', 0, 150, 0, 3, options);
