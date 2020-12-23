@@ -406,8 +406,8 @@
     </div>
     <script src="../../assets/js/jquery-1.9.1.min.js"></script>
     <script src="../../lib/layui/layui.js"></script>
-    <script src="../../assets/js/page.js"></script>
     <script src="../../lib/vue/vue.min.js"></script>
+    <script src="../../assets/js/page.js"></script>
     <script src="../../lib/vant@2.11.2/vant.min.js"></script>
     <script src="../../assets/js/ehManage.js"></script>
     <script>
@@ -419,7 +419,14 @@
             mounted() {},
             methods: {
                 goTop(){
-                    document.documentElement.scrollTop=0;
+                    try{
+                        $('html,body').animate({ scrollTop: '0px' }, 1000); 
+                    }
+                    catch(err){
+
+                    }
+                    // $('html,body').animate({ scrollTop: '0px' }, 1000); 
+                    // document.documentElement.scrollTop=0;
                 },
                 moveLbNav(num){
                     let clickItems=document.getElementsByClassName("clickItem")

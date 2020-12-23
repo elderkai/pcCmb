@@ -314,7 +314,7 @@ justify-content: space-around;
     box-sizing: border-box;
     padding:15px;
     margin-bottom:2px;
-    
+    cursor: pointer;
 }
 .fixBtn .btn_ite:hover{
     background: RGBA(69, 178, 51, 1);

@@ -5,7 +5,7 @@ layui.use(['layer', 'form'], function(){
   });
   layui.use('element', function(){
     var element = layui.element;
-    console.log(element);
+    // console.log(element);
     //…
   });
   layui.use('carousel', function(){
@@ -33,12 +33,12 @@ layui.use(['layer', 'form'], function(){
   window.onscroll=function(){
     var topScroll =document.documentElement.scrollTop;//滚动的距离,距离顶部的距离
     var nav = document.getElementById("navBtns");//获取到导航栏id
-    if(topScroll <= 995){
-        //当滚动距离小于250的时候执行下面的内容，也就是让导航栏恢复原状    
+    if(topScroll <= 935){
+        //当滚动距离小于x的时候执行下面的内容，也就是让导航栏恢复原状    
         nav.style.position = 'absolute';
         nav.style.top= '995px';
     }else{      
-        //当滚动距离大于250px时执行下面的东西
+        //当滚动距离大于x时执行下面的东西
         nav.style.position = 'fixed';
         nav.style.top = '90px';
         nav.style.right = '30px'
@@ -47,9 +47,22 @@ layui.use(['layer', 'form'], function(){
 
 }
 $('#btnGoTop').on('click', function() {
+  $('html,body').animate({ scrollTop: '0px' }, 1000); 
+    return false; 
+  // document.documentElement.scrollTop=0;
+});
 
-  document.documentElement.scrollTop=0;
-});
-$('.clickItem').on('click', function() {
-console.log("a");
-});
+var options = {
+  useEasing: true,
+  useGrouping: true,
+  separator: ',',
+  decimal: '.'
+};
+var money1 = new CountUp('money1', 0, 150, 0, 3, options);
+var money2 = new CountUp('money2', 0, 2700, 0, 3, options);
+var money3 = new CountUp('money3', 0, 200, 0, 3, options);
+var money4 = new CountUp('money4', 0, 1200, 0, 3, options);
+money1.start();
+money2.start();
+money3.start();
+money4.start();
