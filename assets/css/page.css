@@ -44,6 +44,86 @@
     width: 15px;
     top:-2px;
 }
+.banner-btn .iconEmail{
+    background: url("../imgs/email.png");
+    background-size:contain;
+    background-repeat: no-repeat;
+    width: 14px;
+    height: 11px;
+    margin:0 5px;
+    position: relative;
+    top:2px;
+    display: inline-block;
+}
+.banner-btn:hover .iconEmail{
+    background: url("../imgs/emailHover.png");
+}
+.banner-btn{
+    padding-right: 8px;
+}
+.banner-btn .iconCollection{
+    display: inline-block;
+    background-size:auto;
+    background-repeat: no-repeat;
+    width: 15px;
+    height: 12px;
+    position: relative;
+    background: url("../imgs/collection.png");
+    top:2px;
+    margin:0 5px;
+}
+.banner-btn:hover .iconCollection{
+    background: url("../imgs/CollectionHover.png");
+    
+}
+.banner-btn .iconArrow{
+    display: inline-block;
+    background: url("../imgs/more.png");
+    background-size:contain;
+    background-repeat: no-repeat;
+    position: relative;
+    top:-1px;
+    margin-left: 2px;
+}
+.banner-btn .wxIcon{
+    display: inline-block;
+    width: 19px;
+    height: 15px;
+    background: url("../imgs/wx.png");
+    background-size:contain;
+    background-repeat: no-repeat;
+    position: relative;
+    top:2.5px;
+    margin:0 5px;
+}
+.banner-btn:hover .wxIcon{
+    background: url("../imgs/wxHover.png");
+    
+}
+.wxShow_box p{
+    font-family: "\5FAE\8F6F\96C5\9ED1";
+    color: #555;
+    font-size: 12px;
+    line-height: 1;
+    padding-top: 8px;
+    text-align: center;
+    display: block;
+    white-space: nowrap;
+}
+.banner-btn:hover .wxShow_box{
+    display: block;
+}
+.wxShow_box{
+    display: none;
+    position: absolute;
+    top:33px;
+    left: 0;
+    z-index: 4;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px 10px 8px 10px;
+    background: #fff;
+    border: 1px solid #dcdcdc;
+}
 .banner-btn{
     display: inline-block;
     height: 100%;
@@ -52,6 +132,16 @@
     font-weight: 600;
     color: #666666;
     line-height: 41px;
+    cursor: pointer;
+    position: relative;
+}
+.iconArrow{
+    transition: all 0.3s linear;
+}
+
+.banner-btn:hover .iconArrow{
+    transform: rotate(180deg);
+
 }
 .nav-icon-box img{
     margin-left: 50%;
