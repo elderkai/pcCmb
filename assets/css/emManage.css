@@ -261,6 +261,12 @@ width: 378px;
     white-space:nowrap;
 
 }
+.van-tab__text{
+    font-size: 16px;
+    font-family: FZLanTingHeiS-R-GB;
+    /* font-weight: 400; */
+    color: #000000;
+}
 .van-tabs__content{
     /* display: flex!important; */
     justify-content: space-between;

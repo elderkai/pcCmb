@@ -3,6 +3,20 @@
     var topScroll =document.documentElement.scrollTop;//滚动的距离,距离顶部的距离
     var fixBox = document.getElementById("fixed_box");//获取到导航栏id
     var fixBox2 = document.getElementById("fixed_box2");//获取到导航栏id
+    var topScroll =document.documentElement.scrollTop;//滚动的距离,距离顶部的距离
+    var nav = document.getElementById("navBtns");//获取到导航栏id
+
+    var topLength = nav.getBoundingClientRect().top; //div离屏幕上边距离（长度）
+  
+    if(topScroll <= 935){
+        nav.style.position = 'absolute';
+        nav.style.top= '995px';
+    }else{      
+        nav.style.position = 'fixed';
+        nav.style.top = '80px';
+        nav.style.right = '30px'
+     
+    }
     if(fixBox){
         var leftLength = fixBox.getBoundingClientRect().left; //div离屏幕右边距离（长度）
         
@@ -53,3 +67,8 @@
 
 
 }
+$('#btnGoTop').on('click', function() {
+  $('html,body').animate({ scrollTop: '0px' }, 1000); 
+    return false; 
+
+});

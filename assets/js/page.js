@@ -35,18 +35,11 @@ layui.use(['layer', 'form'], function(){
     var nav = document.getElementById("navBtns");//获取到导航栏id
 
     var topLength = nav.getBoundingClientRect().top; //div离屏幕上边距离（长度）
-    // var bottomLength = div.getBoundingClientRect().bottom; //div离屏幕下边距离（长度）
-
-    // var leftLength = div.getBoundingClientRect().left; //div离屏幕左边距离（长度）
-    // var rightLength = div.getBoundingClientRect().right; //div离屏幕右边距离（长度）
-    // var rightLength = fixBox.getBoundingClientRect().left; //div离屏幕右边距离（长度）
-    // console.log(rightLength);
+  
     if(topScroll <= 935){
-        //当滚动距离小于x的时候执行下面的内容，也就是让导航栏恢复原状    
         nav.style.position = 'absolute';
         nav.style.top= '995px';
     }else{      
-        //当滚动距离大于x时执行下面的东西
         nav.style.position = 'fixed';
         nav.style.top = '80px';
         nav.style.right = '30px'
