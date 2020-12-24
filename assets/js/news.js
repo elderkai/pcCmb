@@ -42,17 +42,17 @@
     if(fixBox2){
         var leftLength = fixBox2.getBoundingClientRect().left; //div离屏幕右边距离（长度）
         console.log(leftLength);
-        if(topScroll >=236&&topScroll<1066){
+        if(topScroll >=236&&topScroll<1044){
             //当滚动距离大于x时执行下面的东西
     fixBox2.style.position = 'fixed';
     fixBox2.style.top = 0+"px";
     fixBox2.style.marginLeft = '0';
     // fixBox2.style.left = leftLength+"px" 
       }
-      else if(topScroll>=1066){
+      else if(topScroll>=1044){
           fixBox2.style.position = 'absolute';
-        //   fixBox2.style.top = 793+"px";
-          fixBox2.style.top = 829+"px";
+        //   fixBox2.style.top = 22+"px";
+          fixBox2.style.top = 807+"px";
           // fixBox.style.marginLeft = '0';
         //   fixBox2.style.left = leftLength+"px" 
       }
