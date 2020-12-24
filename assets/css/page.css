@@ -76,6 +76,19 @@
     background: url("../imgs/CollectionHover.png");
     
 }
+.banner-btn1{
+    border-left:1px solid #FFF;
+    border-right:1px solid #FFF;
+    padding-right: 14px;
+    margin-right: -6px;
+}
+.banner-btn1:hover{
+    background: #fff;
+    box-sizing: border-box;
+
+    border-left:1px solid #dcdcdc;
+    border-right:1px solid #dcdcdc;
+}
 .banner-btn .iconArrow{
     display: inline-block;
     background: url("../imgs/more.png");
@@ -112,12 +125,14 @@
 }
 .banner-btn:hover .wxShow_box{
     display: block;
+    border-top: none;
 }
 .wxShow_box{
+    
     display: none;
     position: absolute;
     top:33px;
-    left: 0;
+    left: -1px;
     z-index: 4;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
     padding: 10px 10px 8px 10px;

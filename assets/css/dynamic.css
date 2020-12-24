@@ -120,6 +120,16 @@ margin-bottom: 40px;
 cursor: pointer;
     
 }
+.layui-tab-content {
+    /* padding: 0 19%; */
+    width: 1200px;
+    /* margin-left: 50%; */
+    /* transform: translate(-50%,0); */
+    /* background: #f0f0f0; */
+    padding-top: 35px;
+    margin: 0 auto;
+    transform:none;
+}
 .nextBox .next{
     width: 503px;
 height: 15px;
@@ -138,4 +148,16 @@ margin-top: 15px;
 }
 .nextBox .back:hover{
     color: #45B233;
+}
+.layui-tab-content{
+    position: relative;
+}
+.layui-tab-item .right{
+    width: 320px;
+    position: absolute;
+    top: 0;
+    right: -10px;
+}
+.layui-tab-item{
+    display: block!important;
 }

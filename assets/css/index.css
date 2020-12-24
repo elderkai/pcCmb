@@ -1,5 +1,6 @@
 .nav-bgImg1{
-    background-image:url("../imgs/carousel2Big.png");
+    /* background-image:url("../imgs/carousel2Big.png")  ; */
+    background: url("../imgs/carousel2Big.png") 50% 0px no-repeat;
     background-repeat:no-repeat;    
     background-size:cover;
     /* background-position: 0 -238px; */
@@ -23,13 +24,14 @@
     box-sizing: border-box;
 }
 .nav-bgImg2{
-    background-image:url("../imgs/carousel3Big.png");
+    background: url("../imgs/carousel3Big.png") 50% 0px no-repeat;
     background-repeat:no-repeat;    
     background-size:cover;
     /* background-position: 0 -238px; */
 }
 .nav-bgImg3{
-    background-image:url("../imgs/carousel1Big.png");
+    background: url("../imgs/carousel1Big.png") 50% 0px no-repeat;
+
     background-repeat:no-repeat;    
     background-size:cover;
     /* background-position: 0 -238px; */
