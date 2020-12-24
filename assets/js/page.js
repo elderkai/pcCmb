@@ -33,6 +33,14 @@ layui.use(['layer', 'form'], function(){
   window.onscroll=function(){
     var topScroll =document.documentElement.scrollTop;//滚动的距离,距离顶部的距离
     var nav = document.getElementById("navBtns");//获取到导航栏id
+
+    var topLength = nav.getBoundingClientRect().top; //div离屏幕上边距离（长度）
+    // var bottomLength = div.getBoundingClientRect().bottom; //div离屏幕下边距离（长度）
+
+    // var leftLength = div.getBoundingClientRect().left; //div离屏幕左边距离（长度）
+    // var rightLength = div.getBoundingClientRect().right; //div离屏幕右边距离（长度）
+    // var rightLength = fixBox.getBoundingClientRect().left; //div离屏幕右边距离（长度）
+    // console.log(rightLength);
     if(topScroll <= 935){
         //当滚动距离小于x的时候执行下面的内容，也就是让导航栏恢复原状    
         nav.style.position = 'absolute';
@@ -40,14 +48,25 @@ layui.use(['layer', 'form'], function(){
     }else{      
         //当滚动距离大于x时执行下面的东西
         nav.style.position = 'fixed';
-        nav.style.top = '90px';
+        nav.style.top = '80px';
         nav.style.right = '30px'
      
     }
-
 }
 $('#btnGoTop').on('click', function() {
   $('html,body').animate({ scrollTop: '0px' }, 1000); 
     return false; 
-  // document.documentElement.scrollTop=0;
+
+});
+$('.ph-btn-more').on('click', function() {
+  layer.open({
+    type: 1,
+    title: false,
+    closeBtn: 0,
+    shade:0.7,
+    // area: ['26%', '45%'],
+    shadeClose: true,
+    skin: 'code',
+    content: $('#alertWx').html()
+});
 });

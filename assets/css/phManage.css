@@ -85,6 +85,7 @@ height: 57px;
 margin-top: 10px;
 margin-bottom: 60px;
 transform: translate(-50%,0);
+cursor: pointer;
 }
 .healthPersonManage{
 margin-bottom: 40px;
@@ -95,4 +96,78 @@ margin-bottom: 40px;
 }
 .healthPersonManage .personHealthItem:hover .peronHethP{
     -webkit-transform: translateY(0px); -moz-transform: translateY(0px); transform: translateY(0px); 
+}
+.healthMallBg{
+    width: 100%;
+    height: 335px;
+    padding-top: 80px;
+    background: url("../imgs/bg1.png");
+}
+.healthMallBg .container{
+    width: 1200px;
+    margin:0 auto;
+    display: flex;
+}
+.healthMallBg .right p{
+height: 15px;
+font-size: 14px;
+font-family: Source Han Sans CN;
+font-weight: 500;
+color: #FFFFFF;
+line-height: 24px;
+text-align: center;
+}
+.healthMallBg .right{
+    display: flex;
+    margin-left: 223px;
+}
+.healthMallBg .container .left .title{
+height: 35px;
+font-size: 36px;
+font-family: Source Han Sans CN;
+font-weight: bold;
+color: #FFFFFF;
+line-height: 36px;
+}
+.healthMallBg .container .left p{
+    margin-top: 35px;
+    width: 598px;
+height: 86px;
+font-size: 14px;
+font-family: Source Han Sans CN;
+font-weight: 500;
+color: #FFFFFF;
+line-height: 24px;
+}
+#alertWx{
+    display: none;
+}
+#alertWx .title{
+    height: 28px;
+    font-size: 20px;
+    font-family: Microsoft YaHei;
+    font-weight: bold;
+    color: #333333;
+    line-height: 30px;
+    margin-bottom: 26px;
+}
+.layui-layer .layui-layer-content .title{
+    height: 28px;
+    font-size: 20px;
+    font-family: Microsoft YaHei;
+    font-weight: bold;
+    color: #333333;
+    line-height: 30px;
+    margin-bottom: 26px;
+}
+
+ .boxQr {
+    width: 100%;
+    height: 184px;
+    background: url("../imgs/ehmanage/bg7.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.layui-layer{
+    border-radius: 10px;
 }
