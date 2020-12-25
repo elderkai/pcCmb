@@ -7,16 +7,31 @@
     var nav = document.getElementById("navBtns");//获取到导航栏id
 
     var topLength = nav.getBoundingClientRect().top; //div离屏幕上边距离（长度）
+    let height = $(".aboutUs")[0].offsetTop-204;
+    if(topScroll>=935&&topScroll<height){
+      nav.style.position = 'fixed';
+     nav.style.top = '80px';
+     nav.style.right = '30px'  
+ }
+ else if(topScroll>=height)
+ {
+   nav.style.position = 'absolute';
+   nav.style.top= height+84+"px";
+   nav.style.left= 'auto';
+ }else{
+     nav.style.position = 'absolute';
+     nav.style.top= '995px';
+ }
   
-    if(topScroll <= 935){
-        nav.style.position = 'absolute';
-        nav.style.top= '995px';
-    }else{      
-        nav.style.position = 'fixed';
-        nav.style.top = '80px';
-        nav.style.right = '30px'
+    // if(topScroll <= 935){
+    //     nav.style.position = 'absolute';
+    //     nav.style.top= '995px';
+    // }else{      
+    //     nav.style.position = 'fixed';
+    //     nav.style.top = '80px';
+    //     nav.style.right = '30px'
      
-    }
+    // }
     if(fixBox){
         var leftLength = fixBox.getBoundingClientRect().left; //div离屏幕右边距离（长度）
         
@@ -41,7 +56,6 @@
     }
     if(fixBox2){
         var leftLength = fixBox2.getBoundingClientRect().left; //div离屏幕右边距离（长度）
-        console.log(leftLength);
         if(topScroll >=236&&topScroll<1044){
             //当滚动距离大于x时执行下面的东西
     fixBox2.style.position = 'fixed';
@@ -62,10 +76,6 @@
       fixBox2.style.left= 'auto';   
       }
     }
-
-  
-
-
 }
 $('#btnGoTop').on('click', function() {
   $('html,body').animate({ scrollTop: '0px' }, 1000); 

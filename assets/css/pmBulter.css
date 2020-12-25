@@ -81,6 +81,12 @@ margin-right: 5px;
     cursor: pointer;
     
 }
+.layui-timeline-content {
+    padding-left: 60px;
+    position: relative;
+    top: -32px;
+    width: 778px;
+}
 .btn-Phone{
     width: 268px;
     height: 46px;
@@ -89,7 +95,7 @@ margin-right: 5px;
     text-align: center;
     color:#fff;
     border-radius: 5px;
-    margin-top: 60px;
+    margin-top: 25px;
 }
 .callPhone{
     font-size: 14px;

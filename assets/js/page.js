@@ -5,7 +5,6 @@ layui.use(['layer', 'form'], function(){
   });
   layui.use('element', function(){
     var element = layui.element;
-    // console.log(element);
     //…
   });
   layui.use('carousel', function(){
@@ -31,21 +30,36 @@ layui.use(['layer', 'form'], function(){
     });
   });
   window.onscroll=function(){
+   
     var topScroll =document.documentElement.scrollTop;//滚动的距离,距离顶部的距离
     var nav = document.getElementById("navBtns");//获取到导航栏id
 
     var topLength = nav.getBoundingClientRect().top; //div离屏幕上边距离（长度）
   
-    if(topScroll <= 935){
-        nav.style.position = 'absolute';
-        nav.style.top= '995px';
-    }else{      
-        nav.style.position = 'fixed';
-        nav.style.top = '80px';
-        nav.style.right = '30px'
-     
-    }
-}
+    // if(topScroll <= 935){
+    //     nav.style.position = 'absolute';
+    //     nav.style.top= '995px';
+    // }else{      
+    //     nav.style.position = 'fixed';
+    //     nav.style.top = '80px';
+    //     nav.style.right = '30px'
+    // }
+    let height = $(".aboutUs")[0].offsetTop-204;
+    if(topScroll>=935&&topScroll<height){
+      nav.style.position = 'fixed';
+     nav.style.top = '80px';
+     nav.style.right = '30px'  
+ }
+ else if(topScroll>=height)
+ {
+   nav.style.position = 'absolute';
+   nav.style.top= height+84+"px";
+   nav.style.left= 'auto';
+ }else{
+     nav.style.position = 'absolute';
+     nav.style.top= '995px';
+ }
+  }
 $('#btnGoTop').on('click', function() {
   $('html,body').animate({ scrollTop: '0px' }, 1000); 
     return false; 
