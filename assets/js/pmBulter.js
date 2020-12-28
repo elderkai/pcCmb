@@ -5,20 +5,28 @@
     var fixBox = document.getElementById("fixed_box");//获取到导航栏id
     var leftLength = fixBox.getBoundingClientRect().left; //div离屏幕右边距离（长度）
     let height = $(".aboutUs")[0].offsetTop-204;
-    if(topScroll>=905&&topScroll<height){
+//     if(topScroll>=905&&topScroll<height){
+//       nav.style.position = 'fixed';
+//      nav.style.top = '80px';
+//      nav.style.right = '30px'  
+//  }
+//  else if(topScroll>=height)
+//  {
+//    nav.style.position = 'absolute';
+//    nav.style.top= height+84+"px";
+//    nav.style.left= 'auto';
+//  }else{
+//      nav.style.position = 'absolute';
+//      nav.style.top= '995px';
+//  }
+if(topScroll>200){
       nav.style.position = 'fixed';
-     nav.style.top = '80px';
+     nav.style.top = '50%';
      nav.style.right = '30px'  
- }
- else if(topScroll>=height)
- {
-   nav.style.position = 'absolute';
-   nav.style.top= height+84+"px";
-   nav.style.left= 'auto';
- }else{
-     nav.style.position = 'absolute';
-     nav.style.top= '995px';
- }
+     nav.style.display="block"
+}else{
+nav.style.display="none"
+}
 
     if(topScroll >=724&&topScroll<8425)
     {      
