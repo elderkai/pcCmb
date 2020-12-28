@@ -42,16 +42,16 @@ nav.style.display="none"
     if(fixBox){
         var leftLength = fixBox.getBoundingClientRect().left; //div离屏幕右边距离（长度）
         
-        if(topScroll >=262&&topScroll<1385){
+        if(topScroll >=262&&topScroll<1353){
             //当滚动距离大于x时执行下面的东西
     fixBox.style.position = 'fixed';
     fixBox.style.top = 0+"px";
     fixBox.style.marginLeft = '0';
     fixBox.style.left = leftLength+"pp" 
       }
-      else if(topScroll>=1385){
+      else if(topScroll>=1353){
           fixBox.style.position = 'absolute';
-          fixBox.style.top = 1150+"px";
+          fixBox.style.top = 1118+"px";
           // fixBox.style.marginLeft = '0';
           fixBox.style.left = leftLength+"pp" 
       }
@@ -73,7 +73,7 @@ nav.style.display="none"
       else if(topScroll>=1044){
           fixBox2.style.position = 'absolute';
         //   fixBox2.style.top = 22+"px";
-          fixBox2.style.top = 807+"px";
+          fixBox2.style.top = 762+"px";
           // fixBox.style.marginLeft = '0';
         //   fixBox2.style.left = leftLength+"px" 
       }
