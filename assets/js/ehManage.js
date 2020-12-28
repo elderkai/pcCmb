@@ -29,21 +29,28 @@ layui.use('element', function(){
     var fixBox = document.getElementById("fixed_box");//获取到导航栏id
     
     var leftLength = fixBox.getBoundingClientRect().left; //div离屏幕右边距离（长度）
-    if(topScroll>=935&&topScroll<2190){
-         nav.style.position = 'fixed';
-        nav.style.top = '80px';
-        nav.style.right = '30px'  
-    }
-    else if(topScroll>=2190)
-    {
-      nav.style.position = 'absolute';
-      nav.style.top= '2271px';
-      nav.style.left= 'auto';
-    }else{
-        nav.style.position = 'absolute';
-        nav.style.top= '995px';
-    }
-   
+    // if(topScroll>=935&&topScroll<2190){
+    //      nav.style.position = 'fixed';
+    //     nav.style.top = '80px';
+    //     nav.style.right = '30px'  
+    // }
+    // else if(topScroll>=2190)
+    // {
+    //   nav.style.position = 'absolute';
+    //   nav.style.top= '2271px';
+    //   nav.style.left= 'auto';
+    // }else{
+    //     nav.style.position = 'absolute';
+    //     nav.style.top= '995px';
+    // }
+    if(topScroll>200){
+      nav.style.position = 'fixed';
+     nav.style.top = '80%';
+     nav.style.right = '30px'  
+     nav.style.display="block"
+}else{
+nav.style.display="none"
+}
     if(topScroll >=714&&topScroll<1485)
     {      
       //当滚动距离大于x时执行下面的东西

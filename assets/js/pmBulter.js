@@ -21,7 +21,7 @@
 //  }
 if(topScroll>200){
       nav.style.position = 'fixed';
-     nav.style.top = '50%';
+     nav.style.top = '80%';
      nav.style.right = '30px'  
      nav.style.display="block"
 }else{
