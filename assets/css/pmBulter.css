@@ -218,11 +218,11 @@ font-size: 26px;
 }
 .merit{
     display: inline-block;
-    width: 283px;
+    width: 260px;
     height: 316px;
     background: #fff;
     border-radius: 5px;
-    padding:49px 36px;
+    padding:49px 22px;
     
 box-shadow: 0px 11px 9px 0px rgba(237, 237, 237, 0.53);
 }
@@ -267,7 +267,7 @@ margin-top:10px;
 }
 .disclaimer P{
     margin-top: 40px;
-    width: 889px;
+    width: 813px;
     font-size: 16px;
     font-family: Microsoft YaHei;
     font-weight: 400;
