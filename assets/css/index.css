@@ -230,6 +230,8 @@ bottom: 10px;
     background-image: none;
 }
 .healthCaseItem-title{
+    width: 210px;
+    white-space: nowrap;
     font-size: 24px;
     font-family: PingFangSC;
     font-weight: 600;
