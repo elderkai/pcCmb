@@ -77,24 +77,24 @@
                 <div class="left">
                     <div class="lbNav">
                         <div ref="lbNav" class="lbNavBody">
-                            <img style="width: 400px;height: 285px;" src="../../assets/imgs/pmBulter/bg4.png" alt="">
-                            <img style="width: 400px;height: 285px;" src="../../assets/imgs/pmBulter/bg4.png" alt="">
-                            <img style="width: 400px;height: 285px;" src="../../assets/imgs/pmBulter/bg4.png" alt="">
-                            <img style="width: 400px;height: 285px;" src="../../assets/imgs/pmBulter/bg4.png" alt="">
+                            <img style="width: 400px;height: 286px;" src="../../assets/imgs/pmBulter/bg4.png" alt="">
+                            <img style="width: 400px;height: 286px;" src="../../assets/imgs/pmBulter/bg4.png" alt="">
+                            <img style="width: 400px;height: 286px;" src="../../assets/imgs/pmBulter/bg4.png" alt="">
+                            <img style="width: 400px;height: 286px;" src="../../assets/imgs/pmBulter/bg4.png" alt="">
                         </div>
                     </div>
                     <div style="width: 400px;display: flex;justify-content: space-between;margin-top: 12px;">
-                        <div id="1" @click="moveLbNav(1)" class="clickItem checked_product">
-                            <img style="width: 94px;height: 94px;" src="../../assets/imgs/pmBulter/bg1.png" alt="">
+                        <div >
+                            <img  class="clickItem checked_product" style="width: 94px;height: 94px;" src="../../assets/imgs/pmBulter/bg1.png" alt="">
                         </div>
-                        <div @click="moveLbNav(2)" class="clickItem">
-                            <img style="width: 94px;height: 94px;" src="../../assets/imgs/pmBulter/bg1.png" alt="">
+                        <div  >
+                            <img class="clickItem" style="width: 94px;height: 94px;" src="../../assets/imgs/pmBulter/bg1.png" alt="">
                         </div>
-                        <div @click="moveLbNav(3)" class="clickItem">
-                            <img style="width: 94px;height: 94px;" src="../../assets/imgs/pmBulter/bg1.png" alt="">
+                        <div >
+                            <img  class="clickItem" style="width: 94px;height: 94px;" src="../../assets/imgs/pmBulter/bg1.png" alt="">
                         </div>
-                        <div @click="moveLbNav(4)" class="clickItem">
-                            <img style="width: 94px;height: 94px;" src="../../assets/imgs/pmBulter/bg1.png" alt="">
+                        <div  >
+                            <img class="clickItem" style="width: 94px;height: 94px;" src="../../assets/imgs/pmBulter/bg1.png" alt="">
                         </div>
                         
                     </div>
@@ -153,15 +153,26 @@
                 </div>
             </div>
         </div>
-    
+        <div id="tabsHeaderBar">
+            <div id="tabs_header"  class="tabs_header">
+                <div class="tabs_header_box">
+                    <div class="tabs-item tab_active">产品详情</div>
+                    <div class="tabs-item">服务须知</div>
+                    <div class="tabs-item">使用流程</div>
+                    <div class="tabs-item">免责声明</div>
+                    <div class="tabs-item">常用问题</div>
+                </div>
+            </div>
+
+        </div>
         <div class="tabsBox">
             <van-tabs scrollspy sticky>
-                <van-tab title="产品详情">
+                <van-tab id="tabsConent1" title="产品详情">
                     <img src="../../assets/imgs/pmBulter/bg2.png"
                         style="width: 800px;position: absolute;top: 30px;left:0" alt="">
                     <img src="../../assets/imgs/pmBulter/bg3.png" style="width: 800px;margin-top: 30px;" alt="">
                 </van-tab>
-                <van-tab title="服务须知">
+                <van-tab id="tabsConent2" title="服务须知">
                     <div class="seInstruction">
                         <div class="title">服务须知</div>
                         <p><span>服务电话：</span>400-820-2287</p>
@@ -179,7 +190,7 @@
                         </p>
                     </div>
                 </van-tab>
-                <van-tab title="使用流程">
+                <van-tab id="tabsConent3"  title="使用流程">
                     <div class="seInstruction">
                         <div class="title">使用流程</div>
                     </div>
@@ -251,7 +262,7 @@
                         </div>
                     </div>
                 </van-tab>
-                <van-tab title="免责声明">
+                <van-tab id="tabsConent4"  title="免责声明">
                     <div class="disclaimer">
                         <div class="disBody">
                             <div class="title">免责声明</div>
@@ -260,7 +271,7 @@
                     </div>
 
                 </van-tab>
-                <van-tab title="常用问题">
+                <van-tab id="tabsConent5" title="常用问题">
                     <div></div>
                 </van-tab>
                 <div>
@@ -421,47 +432,8 @@
     </div>
     <script src="../../assets/js/jquery-1.9.1.min.js"></script>
     <script src="../../lib/layui/layui.js"></script>
-    <script src="../../lib/vue/vue.min.js"></script>
     <script src="../../assets/js/pmBulter.js"></script>
-    <script src="../../lib/vant@2.11.2/vant.min.js"></script>
-    <script>
-        new Vue({
-            el: '#vue',
-            data() {
-                return {}
-            },
-            mounted() {},
-            methods: {
-                goTop(){
-                        $('html,body').animate({ scrollTop: '0px' }, 1000); 
-                    // $('html,body').animate({ scrollTop: '0px' }, 1000); 
-                    // document.documentElement.scrollTop=0;
-                },
-                moveLbNav(num){
-                    let clickItems=document.getElementsByClassName("clickItem")
-                   for(var i=0;i<4;i++){
-                    clickItems[i].className="clickItem"
-                    }
-                   if(num==1){
-                       this.$refs.lbNav.style.left="-0"
-                       clickItems[0].className="clickItem checked_product"
-                   }
-                   else if(num==2){
-                    this.$refs.lbNav.style.left="-400px"
-                    clickItems[1].className="clickItem checked_product"
-                   }
-                   else if(num==3){
-                    this.$refs.lbNav.style.left="-800px"
-                    clickItems[2].className="clickItem checked_product"
-                   }
-                   else if(num==4){
-                    this.$refs.lbNav.style.left="-1200px"
-                    clickItems[3].className="clickItem checked_product"
-                   }
-                }
-            }
-        });
-    </script>
+
 </body>
 
 </html>

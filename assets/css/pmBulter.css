@@ -277,7 +277,7 @@ margin-top:10px;
 }
 .layui-timeline{
     width: 900px;
-    margin:0 auto;
+    /* margin:0 auto; */
     
 }
 .layui-timeline .layui-timeline-title{
@@ -307,8 +307,8 @@ margin-top:10px;
     padding-top: 40px;
 }
 .tabsBox{
-    /* width: 1200px; */
-    /* margin:0 auto; */
+    width: 1200px;
+    margin:0 auto;
     position: relative;
 }
 .van-tabs{
@@ -374,4 +374,44 @@ font-family: Microsoft YaHei;
 font-weight: bold;
 color: #333333;
 line-height: 36px;
+}
+.tabs_header{
+    height: 80px;
+    box-sizing: border-box;
+    width: 100%;
+    border-bottom: 1px solid rgba(224, 224, 224, 1);
+    border-top: 1px solid rgba(224, 224, 224, 1);
+    background: #fff;
+    z-index:99;
+}
+#tabsHeaderBar{
+    height: 82px;
+    width: 100%;
+}
+.tabs_header_box{
+    width: 1200px;
+    margin:0 auto;
+    display: flex;
+}
+.tabs-item{
+    max-width: 160px;
+    height: 80px;
+    line-height: 80px;
+    font-weight: 400;
+    font-size: 18px;
+    font-family: FZLanTingHeiS-R-GB;
+    /* font-weight: 400; */
+    color: #000000;
+    width: 160px;
+    padding:0 5px;
+    text-align: center;
+    cursor: pointer;
+}
+.tab_active{
+    font-size: 18px;
+    font-family: Microsoft YaHei;
+    font-weight: bold;
+    color: #45B233;
+    line-height: 80px;
+    border-bottom: 3px solid #45B233;
 }
