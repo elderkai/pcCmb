@@ -111,21 +111,43 @@ window.onscroll = function () {
   } else {
     nav.style.display = "none"
   }
-  if (topScroll >= 714 && topScroll < 1485) {
-    //当滚动距离大于x时执行下面的东西
+//   if (topScroll >= 714 && topScroll < 1485) {
+//     //当滚动距离大于x时执行下面的东西
+//     fixBox.style.position = 'fixed';
+//     fixBox.style.top = '80px';
+//     fixBox.style.marginLeft = '0';
+//     fixBox.style.left = leftLength + "px"
+
+//   } else if (topScroll >= 1485) {
+//     fixBox.style.position = 'absolute';
+//     fixBox.style.top = '771px';
+//     fixBox.style.left = 'auto';
+//   } else {
+//     fixBox.style.position = 'absolute';
+//     fixBox.style.top = '0';
+//     fixBox.style.left = 'auto';
+//   }
+
+// }
+let fixedPosition=$( "#aboutUs" ).offset().top;
+if(fixBox){
+    var leftLength = fixBox.getBoundingClientRect().left; //div离屏幕右边距离（长度）
+    
+    if(topScroll >=714&&topScroll<fixedPosition-824-80){
     fixBox.style.position = 'fixed';
     fixBox.style.top = '80px';
     fixBox.style.marginLeft = '0';
     fixBox.style.left = leftLength + "px"
-
-  } else if (topScroll >= 1485) {
-    fixBox.style.position = 'absolute';
-    fixBox.style.top = '771px';
-    fixBox.style.left = 'auto';
-  } else {
-    fixBox.style.position = 'absolute';
-    fixBox.style.top = '0';
-    fixBox.style.left = 'auto';
   }
-
-}
+  else if(topScroll>=fixedPosition-824-80){
+      fixBox.style.position = 'absolute';
+      fixBox.style.top = fixedPosition-824-795+"px";
+      // fixBox.style.marginLeft = '0';
+      fixBox.style.left = "auto" 
+  }
+  else{
+  fixBox.style.position = 'absolute';
+  fixBox.style.top= '0';
+  fixBox.style.left= 'auto';   
+  }
+}}

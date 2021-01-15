@@ -186,9 +186,13 @@ color:#ccc;
     font-weight: 540;
 }
 .personHealthItem .box-btnDetail {
-position: absolute;
-bottom: 10px;
+    position: absolute;
+    bottom: 10px;
 
+}
+.personHealthItem .imgTop{
+   position: absolute;
+   top:0;
 }
 .personHealthItem .box-btnDetail{
     margin-left: 50%;
@@ -306,11 +310,11 @@ line-height: 33px;
 .healthPersonManage .personHealthItem{
     position: relative;
     width: 278px;
-    height: 401px;
+    height: 400px;
     background: #FFFFFF;
     box-shadow: 0px 10px 57px 0px #EFEFEF;
     border-radius: 8px;
-    background-image: url("../imgs/healthPerson1.png");
+    /* background-image: url("../imgs/healthPerson1.png"); */
     background-size:cover;
     background-repeat: no-repeat;
     background-position:100% 100%;
@@ -318,15 +322,17 @@ line-height: 33px;
     position: relative;
     transition: all 0.3s linear;
     cursor: pointer;
+    overflow: hidden;
+    box-sizing: border-box;
 }
 .healthPersonManage .personHethBg1{
-    background-image: url("../imgs/healthPerson1.png");
+    /* background-image: url("../imgs/healthPerson1.png"); */
 }
 .healthPersonManage .personHethBg2{
-    background-image: url("../imgs/healthPerson2.png");
+    /* background-image: url("../imgs/healthPerson2.png"); */
 }
 .healthPersonManage .personHethBg3{
-    background-image: url("../imgs/healthPerson3.png");
+    /* background-image: url("../imgs/healthPerson3.png"); */
 }
 .bgColorF{
     background: #fff;

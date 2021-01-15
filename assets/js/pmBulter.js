@@ -14,9 +14,7 @@ $(".tabs-item").click(function(e){
     e.target.className="tabs-item  goHere"
   for(var i=0;i<tabs.length;i++){
     if( tabs[i].className=="tabs-item  goHere"){
-      
-     if(i==0){
-    
+     if(i==0){    
       $('html,body').animate({ scrollTop:720+"px" }, 500); 
      }
      else{
