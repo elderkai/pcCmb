@@ -421,6 +421,7 @@ margin:0 auto;
 .tabs__content{
 background: #f0f0f0;
 padding-top: 35px;
+min-height: 860px;
 }
 .van-tabs--line .van-tabs__wrap{
     background: #fff;

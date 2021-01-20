@@ -29,6 +29,7 @@ $(".tabs-item").click(function(e){
   }
 })
   window.onscroll=function(){
+    let fixedPosition=$( "#aboutUs" ).offset().top;
     var topScroll =document.documentElement.scrollTop;//滚动的距离,距离顶部的距离
     var nav = document.getElementById("navBtns");//获取到导航栏id
     var fixBox = document.getElementById("fixed_box");//获取到导航栏id
@@ -42,25 +43,25 @@ if(topScroll>200){
 }else{
 nav.style.display="none"
 }
-    if(topScroll >=724&&topScroll<7970)
-    {      
-      fixBox.style.position = 'fixed';
+console.log(fixedPosition);
+if(topScroll >=724&&topScroll<fixedPosition-700){
+     fixBox.style.position = 'fixed';
       fixBox.style.top = '80px';
       fixBox.style.marginLeft = '0';
       fixBox.style.left = leftLength+"px"
-   
-  }else if(topScroll>=7970)
-  {
-    fixBox.style.position = 'absolute';
-    fixBox.style.top= '7262px';
-    fixBox.style.left= 'auto';
-  }
-  else
-    {
-        fixBox.style.position = 'absolute';
-        fixBox.style.top= '0';
-        fixBox.style.left= 'auto';
-    }
+}
+else if(topScroll>=fixedPosition-700){
+fixBox.style.position = 'absolute';
+fixBox.style.top = fixedPosition-824-591+"px";
+fixBox.style.right = 0+"px"
+fixBox.style.left= 'auto';   
+}
+else{
+fixBox.style.position = 'absolute';
+fixBox.style.top= '0';
+fixBox.style.left= 'auto';   
+}
+
     var tabsHeader = document.getElementById("tabs_header")
     var dwei = document.getElementById("tabsHeaderBar")
     let tabTop1=document.getElementById("tabsConent1").getBoundingClientRect().top-82

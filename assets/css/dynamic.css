@@ -55,7 +55,7 @@ line-height: 26px;
 .layui-tab-content{
     background: #fff;
 }
-.newDetail .newsTitle{
+.newDetail h1{
     height: 28px;
     font-size: 28px;
     font-family: Microsoft YaHei;
@@ -83,7 +83,7 @@ display:inline-block;
     display:inline-block;
     margin-left: 114px;
 }
-.newDetail .p1{
+.newDetail p{
     width: 803px;
     font-size: 14px;
 font-family: Microsoft YaHei;
@@ -91,7 +91,14 @@ font-weight: 400;
 color: #555555;
 line-height: 26px;
 margin-top: 30px;
-margin-bottom: 40px;
+/* margin-bottom: 40px; */
+}
+.newDetail p img {
+    width: 100%;
+    max-width: 800px;
+}
+.newDetail p strong{
+    font-size: 18px;;
 }
 .newDetail .nodeTitle{
     font-size:  18px;
@@ -108,6 +115,7 @@ margin-bottom: 40px;
     margin-bottom: 60px;
     box-sizing: border-box;
     background: #F7F7F7;
+    margin-top: 40px;
 }
 .nextBox .back{
     width: 214px;
@@ -152,6 +160,11 @@ margin-top: 15px;
 }
 .layui-tab-content{
     position: relative;
+    min-height: 595px;
+
+}
+.newDatas .layui-tab-content{
+    min-height: 825px;
 }
 .layui-tab-item .right{
     width: 320px;
